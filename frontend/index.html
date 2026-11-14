@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillSherpa | The Trust Layer for Skills</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Chart.js CDN for interactive charts -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            sherpa: {
+              bg: '#070B19',
+              card: '#1E293B',
+              navy: '#0B132B',
+              teal: '#14B8A6',
+              tealDark: '#0D9488',
+              cyan: '#38BDF8',
+              amber: '#F59E0B',
+              emerald: '#10B981',
+              rose: '#EF4444',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background: linear-gradient(180deg, #070B19 0%, #0B132B 100%);
+      color: #F0F3F8;
+      min-height: 100vh;
+      font-family: 'Inter', sans-serif;
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #0F172A;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #334155;
+      border-radius: 4px;
+    }
+    .glow-teal {
+      box-shadow: 0 0 25px -5px rgba(20, 184, 166, 0.35);
+    }
+  </style>
+</head>
+<body class="flex flex-col min-h-screen">
+
+  <!-- TOP NAVIGATION BAR -->
+  <header class="border-b border-slate-800 bg-slate-900/90 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      
+      <!-- Logo & Tagline -->
+      <div class="flex items-center gap-3">
+        <span class="text-3xl">🧗‍♂️</span>
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="font-extrabold text-xl text-sherpa-teal tracking-tight">SkillSherpa</span>
+            <span class="text-xs bg-sherpa-teal/20 text-sherpa-teal font-semibold px-2 py-0.5 rounded-full border border-sherpa-teal/30">
+              TRUST LAYER
+            </span>
+          </div>
+          <p class="text-xs text-slate-400 hidden sm:block">"Certificates prove you watched. We prove you can do."</p>
+        </div>
+      </div>
+
+      <!-- Persona Quick Switcher in Navbar -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        <div class="text-xs text-slate-400 hidden md:block">Demo Personas:</div>
+        <button onclick="setPersona('arun')" id="nav-btn-arun" class="px-2.5 py-1 text-xs rounded-lg border border-slate-700 bg-slate-800 hover:bg-slate-700 transition flex items-center gap-1.5 font-medium">
+          <span>🏕️</span> <span class="hidden sm:inline">Arun (State)</span>
+        </button>
+        <button onclick="setPersona('meena')" id="nav-btn-meena" class="px-2.5 py-1 text-xs rounded-lg border border-slate-700 bg-slate-800 hover:bg-slate-700 transition flex items-center gap-1.5 font-medium">
+          <span>🧬</span> <span class="hidden sm:inline">Meena (Bio)</span>
+        </button>
+        <button onclick="setPersona('karthik')" id="nav-btn-karthik" class="px-2.5 py-1 text-xs rounded-lg border border-slate-700 bg-slate-800 hover:bg-slate-700 transition flex items-center gap-1.5 font-medium">
+          <span>⚡</span> <span class="hidden sm:inline">Karthik (CS)</span>
+        </button>
+        
+        <!-- Live AI Badge -->
+        <span class="text-xs bg-emerald-950 text-emerald-400 px-2 py-1 rounded-full border border-emerald-700/50 flex items-center gap-1 font-semibold ml-2">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          Live AI Swarm
+        </span>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- MAIN CONTAINER -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 w-full flex-1 flex flex-col gap-6">
+
+    <!-- HERO SUMMIT BANNER -->
+    <div class="bg-gradient-to-r from-slate-900 via-slate-800 to-cyan-950 border border-sherpa-teal/40 rounded-2xl p-6 glow-teal relative overflow-hidden">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 relative z-10">
+        <div class="max-w-2xl">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-xs font-bold uppercase tracking-wider text-sherpa-teal bg-sherpa-teal/10 px-2.5 py-0.5 rounded-full border border-sherpa-teal/20">
+              Agentic Verification Swarm
+            </span>
+            <span id="banner-role-badge" class="text-xs font-semibold text-slate-300 bg-slate-800 px-2.5 py-0.5 rounded-full border border-slate-700">
+              Target: Full Stack Developer
+            </span>
+          </div>
+          <h1 class="text-2xl sm:text-3xl font-black text-slate-100 tracking-tight">
+            Base Camp ➔ Summit Expedition
+          </h1>
+          <p id="banner-bio" class="text-slate-300 text-sm mt-1 leading-relaxed">
+            Welcome Arun Kumar (State Board). Your Sherpa has mapped a verified climb tailored to your Foundation profile with Tanglish and Pressure-Free assistance.
+          </p>
+        </div>
+
+        <!-- Metric Badges in Hero -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 w-full md:w-auto">
+          <div class="bg-slate-950/80 border border-slate-800 rounded-xl p-3 text-center min-w-[100px]">
+            <div class="text-[11px] text-slate-400 uppercase font-semibold">Job Readiness</div>
+            <div id="metric-readiness" class="text-2xl font-black text-sherpa-cyan">33%</div>
+            <div class="text-[10px] text-slate-400">Weighted Proof</div>
+          </div>
+          <div class="bg-slate-950/80 border border-slate-800 rounded-xl p-3 text-center min-w-[100px]">
+            <div class="text-[11px] text-slate-400 uppercase font-semibold">Calibration</div>
+            <div id="metric-calibration" class="text-2xl font-black text-emerald-400">90/100</div>
+            <div class="text-[10px] text-emerald-400">🌟 Honest Learner</div>
+          </div>
+          <div class="bg-slate-950/80 border border-slate-800 rounded-xl p-3 text-center min-w-[100px] col-span-2 sm:col-span-1">
+            <div class="text-[11px] text-slate-400 uppercase font-semibold">Credential State</div>
+            <div id="metric-expiry-state" class="text-sm font-bold text-emerald-400 mt-1">🟢 Valid</div>
+            <div id="metric-expiry-sub" class="text-[10px] text-slate-400">Fresh (&lt;90 days)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- QUICK CONTROLS BAR -->
+    <div class="bg-slate-900 border border-slate-800 rounded-xl p-3 flex flex-wrap items-center justify-between gap-3 text-xs">
+      <div class="flex items-center gap-3">
+        <span class="text-slate-400 font-medium">Summit Summit Goal:</span>
+        <select id="role-selector" onchange="changeRole(this.value)" class="bg-slate-800 border border-slate-700 text-slate-200 rounded-lg px-2.5 py-1 text-xs focus:ring-1 focus:ring-sherpa-teal outline-none">
+          <option value="Full Stack Developer">Full Stack Developer</option>
+          <option value="Data Analyst">Data Analyst</option>
+          <option value="AI/ML Engineer">AI/ML Engineer</option>
+          <option value="Bioinformatics Analyst">Bioinformatics Analyst</option>
+          <option value="Frontend Developer">Frontend Developer</option>
+        </select>
+      </div>
+
+      <div class="flex items-center gap-4">
+        <!-- 100 Days Simulation Toggle -->
+        <label class="flex items-center gap-2 cursor-pointer text-slate-300">
+          <input type="checkbox" id="toggle-sim-100" onchange="toggleSimulate100Days(this.checked)" class="rounded text-sherpa-teal focus:ring-0">
+          <span>⏱️ Simulate +100 Days (Expiry)</span>
+        </label>
+        
+        <!-- Pressure Free Toggle -->
+        <label class="flex items-center gap-2 cursor-pointer text-slate-300">
+          <input type="checkbox" id="toggle-pressure-free" checked class="rounded text-sherpa-teal focus:ring-0">
+          <span>🧘 Pressure-Free Mode</span>
+        </label>
+        
+        <!-- Tanglish Toggle -->
+        <label class="flex items-center gap-2 cursor-pointer text-slate-300">
+          <input type="checkbox" id="toggle-tanglish" checked class="rounded text-sherpa-teal focus:ring-0">
+          <span>🗣️ Tanglish Mentor</span>
+        </label>
+      </div>
+    </div>
+
+    <!-- MAIN NAVIGATION TABS -->
+    <div class="border-b border-slate-800 flex overflow-x-auto gap-2 custom-scrollbar pb-1">
+      <button onclick="switchTab('dashboard')" id="tab-btn-dashboard" class="tab-btn active px-4 py-2 font-semibold text-sm border-b-2 border-sherpa-teal text-sherpa-teal flex items-center gap-2 whitespace-nowrap">
+        <i data-lucide="layout-dashboard" class="w-4 h-4"></i> Dashboard
+      </button>
+      <button onclick="switchTab('roadmap')" id="tab-btn-roadmap" class="tab-btn px-4 py-2 font-semibold text-sm border-b-2 border-transparent text-slate-400 hover:text-slate-200 flex items-center gap-2 whitespace-nowrap">
+        <i data-lucide="map" class="w-4 h-4"></i> Mountain Trail
+      </button>
+      <button onclick="switchTab('assess')" id="tab-btn-assess" class="tab-btn px-4 py-2 font-semibold text-sm border-b-2 border-transparent text-slate-400 hover:text-slate-200 flex items-center gap-2 whitespace-nowrap">
+        <i data-lucide="shield-check" class="w-4 h-4"></i> Assess & AI Viva
+      </button>
+      <button onclick="switchTab('passport')" id="tab-btn-passport" class="tab-btn px-4 py-2 font-semibold text-sm border-b-2 border-transparent text-slate-400 hover:text-slate-200 flex items-center gap-2 whitespace-nowrap">
+        <i data-lucide="award" class="w-4 h-4"></i> Proof Passport & Recruiter
+      </button>
+      <button onclick="switchTab('opportunities')" id="tab-btn-opportunities" class="tab-btn px-4 py-2 font-semibold text-sm border-b-2 border-transparent text-slate-400 hover:text-slate-200 flex items-center gap-2 whitespace-nowrap">
+        <i data-lucide="briefcase" class="w-4 h-4"></i> Opportunities
+      </button>
+      <button onclick="switchTab('mentor')" id="tab-btn-mentor" class="tab-btn px-4 py-2 font-semibold text-sm border-b-2 border-transparent text-slate-400 hover:text-slate-200 flex items-center gap-2 whitespace-nowrap">
+        <i data-lucide="message-square" class="w-4 h-4"></i> AI Sherpa Chat
+      </button>
+      <button onclick="switchTab('institution')" id="tab-btn-institution" class="tab-btn px-4 py-2 font-semibold text-sm border-b-2 border-transparent text-slate-400 hover:text-slate-200 flex items-center gap-2 whitespace-nowrap">
+        <i data-lucide="school" class="w-4 h-4"></i> Institution View
+      </button>
+      <button onclick="switchTab('jargon')" id="tab-btn-jargon" class="tab-btn px-4 py-2 font-semibold text-sm border-b-2 border-transparent text-slate-400 hover:text-slate-200 flex items-center gap-2 whitespace-nowrap">
+        <i data-lucide="book-open" class="w-4 h-4"></i> Jargon Translator
+      </button>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- TAB 1: DASHBOARD -->
+    <!-- ============================================================ -->
+    <div id="tab-dashboard" class="tab-content flex flex-col gap-6">
+      
+      <!-- Top Charts Row -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Competency Radar -->
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-5">
+          <div class="flex items-center justify-between mb-4">
+            <div>
+              <h3 class="font-bold text-slate-100 flex items-center gap-2">
+                <i data-lucide="radar" class="w-4 h-4 text-sherpa-teal"></i> Competency Radar
+              </h3>
+              <p class="text-xs text-slate-400">Verified Evidence Level vs Target Summit Expectation</p>
+            </div>
+            <span class="text-xs text-sherpa-cyan bg-sherpa-cyan/10 border border-sherpa-cyan/30 px-2 py-0.5 rounded-full font-semibold">
+              Live Evaluation
+            </span>
+          </div>
+          <div class="h-64 flex items-center justify-center">
+            <canvas id="radarChart"></canvas>
+          </div>
+        </div>
+
+        <!-- Confidence vs Reality Meter -->
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-5">
+          <div class="flex items-center justify-between mb-4">
+            <div>
+              <h3 class="font-bold text-slate-100 flex items-center gap-2">
+                <i data-lucide="scale" class="w-4 h-4 text-emerald-400"></i> Confidence vs Reality Meter
+              </h3>
+              <p class="text-xs text-slate-400">Self-Assessed Score vs Audited Project Proof</p>
+            </div>
+            <span class="text-xs text-emerald-400 bg-emerald-950 border border-emerald-700 px-2 py-0.5 rounded-full font-semibold">
+              "Knowing Yourself"
+            </span>
+          </div>
+          <div class="h-64 flex items-center justify-center">
+            <canvas id="calibrationChart"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skill Gap Breakdown & Weekly Quest Row -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        
+        <!-- Skill Gaps List (2 Cols) -->
+        <div class="lg:col-span-2 bg-slate-900 border border-slate-800 rounded-xl p-5">
+          <h3 class="font-bold text-slate-100 mb-1 flex items-center gap-2">
+            <i data-lucide="bar-chart-2" class="w-4 h-4 text-sherpa-teal"></i> Skill Gap Severity Breakdown
+          </h3>
+          <p class="text-xs text-slate-400 mb-4">Generated by GapAnalystAgent based on verified project evidence</p>
+          
+          <div id="dashboard-gaps-list" class="flex flex-col gap-2.5">
+            <!-- Rendered dynamically by JS -->
+          </div>
+        </div>
+
+        <!-- Weekly Quest & Consistency (1 Col) -->
+        <div class="flex flex-col gap-6">
+          <div class="bg-gradient-to-br from-slate-900 to-slate-800 border border-sherpa-teal/50 rounded-xl p-5 glow-teal">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-bold text-sherpa-teal uppercase tracking-wider">Active Weekly Quest</span>
+              <span class="text-xs bg-sherpa-teal/20 text-sherpa-teal px-2 py-0.5 rounded-full font-bold">Camp Focus</span>
+            </div>
+            <h4 id="quest-title" class="font-bold text-lg text-slate-100 mb-1">JavaScript Async & State</h4>
+            <p id="quest-desc" class="text-xs text-slate-300 leading-relaxed">
+              Build a client-side weather or habit tracker with async/await, error boundaries, and local persistence.
+            </p>
+            <div class="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between">
+              <span class="text-xs text-slate-400">Deliverable: GitHub URL</span>
+              <button onclick="switchTab('assess')" class="text-xs bg-sherpa-teal text-slate-950 font-bold px-3 py-1.5 rounded-lg hover:bg-sherpa-tealDark transition">
+                Start Challenge ➔
+              </button>
+            </div>
+          </div>
+
+          <div class="bg-slate-900 border border-slate-800 rounded-xl p-5">
+            <h4 class="font-bold text-sm text-slate-200 mb-2 flex items-center gap-1.5">
+              <i data-lucide="award" class="w-4 h-4 text-sherpa-amber"></i> Verified Badges
+            </h4>
+            <div class="flex flex-wrap gap-1.5" id="badges-container">
+              <span class="text-xs bg-emerald-950 text-emerald-300 border border-emerald-800 px-2.5 py-1 rounded-full font-semibold">
+                🌟 Mountain Pioneer
+              </span>
+              <span class="text-xs bg-emerald-950 text-emerald-300 border border-emerald-800 px-2.5 py-1 rounded-full font-semibold">
+                🌟 Honest Learner
+              </span>
+              <span class="text-xs bg-blue-950 text-blue-300 border border-blue-800 px-2.5 py-1 rounded-full font-semibold">
+                🛡️ First Evidence Logged
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- TAB 2: MOUNTAIN TRAIL ROADMAP -->
+    <!-- ============================================================ -->
+    <div id="tab-roadmap" class="tab-content hidden flex flex-col gap-6">
+      <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-4 flex items-center justify-between">
+        <div>
+          <h3 class="font-bold text-slate-100 flex items-center gap-2">
+            <i data-lucide="compass" class="w-4 h-4 text-sherpa-teal"></i> The Mountain Trail & Mastery Gate
+          </h3>
+          <p class="text-xs text-slate-400 mt-0.5">
+            Watching videos only prepares you. Advancing to the next Camp strictly requires a passing <strong>Assessor Quiz + AI Viva Defense</strong>.
+          </p>
+        </div>
+        <span class="text-xs bg-sherpa-teal/20 text-sherpa-teal border border-sherpa-teal/30 px-3 py-1 rounded-full font-semibold">
+          Prerequisite-Safe Path
+        </span>
+      </div>
+
+      <div id="roadmap-camps-list" class="flex flex-col gap-4">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- TAB 3: ASSESS & AI CODE VIVA -->
+    <!-- ============================================================ -->
+    <div id="tab-assess" class="tab-content hidden flex flex-col gap-6">
+      
+      <div class="bg-gradient-to-r from-slate-900 via-slate-800 to-cyan-950 border border-sherpa-teal/50 rounded-xl p-5 glow-teal">
+        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3">
+          <div>
+            <h3 class="font-bold text-lg text-slate-100 flex items-center gap-2">
+              <i data-lucide="shield-alert" class="w-5 h-5 text-sherpa-teal"></i> Technical Verification & Code Viva
+            </h3>
+            <p class="text-xs text-slate-300 mt-0.5">
+              Defend your project evidence against anti-copy heuristics, edge-case queries, and AI viva rubric.
+            </p>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-xs text-slate-400">Select Skill:</span>
+            <select id="assess-skill-select" onchange="loadAssessmentQuestions(this.value)" class="bg-slate-800 border border-slate-700 text-slate-200 rounded-lg px-2.5 py-1 text-xs">
+              <option value="HTML/CSS">HTML/CSS</option>
+              <option value="JavaScript" selected>JavaScript</option>
+              <option value="React">React</option>
+              <option value="Node.js">Node.js</option>
+              <option value="SQL">SQL</option>
+              <option value="Python">Python</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Assessment Form -->
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-6">
+        
+        <h4 class="font-bold text-sm text-sherpa-cyan uppercase tracking-wider mb-3">Part 1: Conceptual Edge Cases</h4>
+        <div id="assess-questions-container" class="flex flex-col gap-4 mb-6">
+          <!-- Rendered dynamically -->
+        </div>
+
+        <h4 class="font-bold text-sm text-sherpa-cyan uppercase tracking-wider mb-2">Part 2: Project Evidence URL</h4>
+        <p class="text-xs text-slate-400 mb-2">Auditable repository URL required for employer and recruiter inspection.</p>
+        <input type="text" id="assess-repo-url" value="https://github.com/arun-dev/javascript-async-tracker" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-slate-200 mb-6 focus:ring-1 focus:ring-sherpa-teal outline-none font-mono">
+
+        <h4 class="font-bold text-sm text-sherpa-cyan uppercase tracking-wider mb-2">Part 3: AI Code Viva Defense</h4>
+        <p id="assess-viva-prompt" class="text-xs text-slate-300 italic mb-2">
+          "Explain how you handled asynchronous network errors and state race conditions in your implementation. What was the toughest bug you solved?"
+        </p>
+        <textarea id="assess-viva-answer" rows="4" placeholder="Explain in your own words. Authentic firsthand reflection and problem-solving is graded higher than generic definitions!" class="w-full bg-slate-950 border border-slate-800 rounded-lg p-3 text-xs text-slate-200 mb-6 focus:ring-1 focus:ring-sherpa-teal outline-none"></textarea>
+
+        <!-- Action Buttons -->
+        <div class="flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-slate-800">
+          <div class="flex items-center gap-2">
+            <button onclick="submitAssessment('fail')" class="text-xs bg-rose-950 text-rose-300 border border-rose-800 font-bold px-3 py-2 rounded-lg hover:bg-rose-900 transition">
+              💥 [Demo] Simulate Fail (&lt;50%)
+            </button>
+            <button onclick="submitAssessment('pass')" class="text-xs bg-emerald-950 text-emerald-300 border border-emerald-800 font-bold px-3 py-2 rounded-lg hover:bg-emerald-900 transition">
+              🌟 [Demo] Simulate Pass (&gt;=85%)
+            </button>
+          </div>
+          <button onclick="submitAssessment('normal')" class="text-xs bg-sherpa-teal text-slate-950 font-bold px-5 py-2 rounded-lg hover:bg-sherpa-tealDark transition flex items-center gap-2">
+            <i data-lucide="send" class="w-3.5 h-3.5"></i> Submit Evidence for Grading
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Assessment Result Modal/Card (Hidden until submitted) -->
+      <div id="assess-result-card" class="hidden bg-slate-900 border border-slate-800 rounded-xl p-6">
+        <!-- Rendered upon submit -->
+      </div>
+
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- TAB 4: PROOF PASSPORT & RECRUITER -->
+    <!-- ============================================================ -->
+    <div id="tab-passport" class="tab-content hidden flex flex-col gap-6">
+      
+      <!-- Passport Header -->
+      <div class="bg-gradient-to-r from-slate-900 to-slate-800 border border-sherpa-teal/50 rounded-xl p-6 glow-teal">
+        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+          <div>
+            <span class="text-xs font-mono text-sherpa-cyan bg-sherpa-cyan/10 px-2 py-0.5 rounded border border-sherpa-cyan/30">
+              PASSPORT ID: SKSH-2026-92841
+            </span>
+            <h2 id="passport-name" class="text-xl font-bold text-slate-100 mt-2">Arun Kumar</h2>
+            <div id="passport-subtitle" class="text-xs text-slate-400 mt-0.5">
+              State Board • IT Discipline • Foundation Learner
+            </div>
+          </div>
+          <div class="text-right">
+            <div class="text-xs text-slate-400 uppercase">Self-Calibration Index</div>
+            <div id="passport-calibration" class="text-3xl font-black text-emerald-400">90/100</div>
+            <span class="text-[11px] text-emerald-400 bg-emerald-950 px-2 py-0.5 rounded-full font-semibold border border-emerald-800">
+              🌟 Honest Learner Verified
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sub Tabs: 1. Learner Passport | 2. Recruiter Search -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        
+        <!-- Left: Verified Evidence Cards (2 Cols) -->
+        <div class="lg:col-span-2 flex flex-col gap-4">
+          <h3 class="font-bold text-slate-100 flex items-center gap-2">
+            <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400"></i> Verified Competency Dossier
+          </h3>
+          <div id="passport-credentials-list" class="flex flex-col gap-3">
+            <!-- Rendered dynamically -->
+          </div>
+
+          <!-- Honest Failed History -->
+          <h3 class="font-bold text-slate-100 flex items-center gap-2 mt-4">
+            <i data-lucide="history" class="w-4 h-4 text-sherpa-amber"></i> Honest Expedition History (Failed Attempts)
+          </h3>
+          <p class="text-xs text-slate-400 -mt-2">Unlike fake certificates, SkillSherpa embraces failure as authentic proof of growth.</p>
+          <div id="passport-failed-list" class="flex flex-col gap-2.5">
+            <!-- Rendered dynamically -->
+          </div>
+        </div>
+
+        <!-- Right: Recruiter Search Filter (1 Col) -->
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-5 h-fit">
+          <div class="flex items-center gap-2 mb-3">
+            <i data-lucide="search" class="w-4 h-4 text-sherpa-cyan"></i>
+            <h4 class="font-bold text-slate-100 text-sm">Recruiter Talent Filter</h4>
+          </div>
+          <p class="text-xs text-slate-400 mb-4">Search 60 pre-audited candidates by verified skill, not unproven resume claims.</p>
+
+          <div class="flex flex-col gap-3 text-xs">
+            <div>
+              <label class="text-slate-400 block mb-1">Required Verified Skill:</label>
+              <select id="recruiter-skill-filter" onchange="filterCandidates()" class="w-full bg-slate-800 border border-slate-700 text-slate-200 rounded px-2.5 py-1.5 outline-none">
+                <option value="All">Any Verified Skill</option>
+                <option value="HTML/CSS">HTML/CSS</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="React">React</option>
+                <option value="Node.js">Node.js</option>
+                <option value="SQL">SQL</option>
+                <option value="Python">Python</option>
+              </select>
+            </div>
+            <div>
+              <label class="text-slate-400 block mb-1">Minimum Verified Level:</label>
+              <select id="recruiter-level-filter" onchange="filterCandidates()" class="w-full bg-slate-800 border border-slate-700 text-slate-200 rounded px-2.5 py-1.5 outline-none">
+                <option value="1">Level 1 (Foundation)</option>
+                <option value="2" selected>Level 2 (Applied)</option>
+                <option value="3">Level 3 (Production)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="mt-4 pt-3 border-t border-slate-800">
+            <div class="text-[11px] text-slate-400 font-semibold mb-2">Matching Candidates:</div>
+            <div id="recruiter-results" class="flex flex-col gap-2 max-h-64 overflow-y-auto custom-scrollbar">
+              <!-- Rendered dynamically -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- TAB 5: OPPORTUNITIES -->
+    <!-- ============================================================ -->
+    <div id="tab-opportunities" class="tab-content hidden flex flex-col gap-6">
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3">
+        <div>
+          <h3 class="font-bold text-slate-100 flex items-center gap-2">
+            <i data-lucide="sparkles" class="w-4 h-4 text-sherpa-amber"></i> Verified Opportunities Engine
+          </h3>
+          <p class="text-xs text-slate-400">Only surfaces roles where your audited skills meet or exceed employer thresholds.</p>
+        </div>
+        <div class="flex gap-2">
+          <button onclick="filterOpps('all')" class="opp-filter-btn text-xs bg-sherpa-teal text-slate-950 font-bold px-3 py-1 rounded-lg">All</button>
+          <button onclick="filterOpps('matched')" class="opp-filter-btn text-xs bg-slate-800 text-slate-300 font-medium px-3 py-1 rounded-lg">✅ Matched</button>
+          <button onclick="filterOpps('beginner')" class="opp-filter-btn text-xs bg-slate-800 text-slate-300 font-medium px-3 py-1 rounded-lg">🌱 Beginner Friendly</button>
+        </div>
+      </div>
+
+      <div id="opps-list-container" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- TAB 6: AI SHERPA CHAT -->
+    <!-- ============================================================ -->
+    <div id="tab-mentor" class="tab-content hidden flex flex-col gap-4">
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <span class="text-2xl">🧗‍♂️</span>
+          <div>
+            <h3 class="font-bold text-slate-100 text-sm">AI Sherpa Mentor</h3>
+            <p class="text-xs text-slate-400">Context-aware of your learner profile, gaps, and confidence levels.</p>
+          </div>
+        </div>
+        <span id="chat-mode-badge" class="text-xs bg-sherpa-teal/20 text-sherpa-teal border border-sherpa-teal/30 px-2.5 py-1 rounded-full font-semibold">
+          🗣️ Tanglish Enabled
+        </span>
+      </div>
+
+      <!-- Chat Box Messages -->
+      <div id="chat-messages" class="bg-slate-950 border border-slate-800 rounded-xl p-4 h-96 overflow-y-auto custom-scrollbar flex flex-col gap-3">
+        <!-- Rendered dynamically -->
+      </div>
+
+      <!-- Chat Input -->
+      <div class="flex gap-2">
+        <input type="text" id="chat-input" onkeypress="if(event.key==='Enter') sendChatMessage()" placeholder="Ask your Sherpa anything (concepts, project bugs, career doubts, anxiety)..." class="flex-1 bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-xs text-slate-200 focus:ring-1 focus:ring-sherpa-teal outline-none">
+        <button onclick="sendChatMessage()" class="bg-sherpa-teal text-slate-950 font-bold px-5 py-3 rounded-xl hover:bg-sherpa-tealDark transition flex items-center gap-1.5 text-xs">
+          <span>Send</span> <i data-lucide="send" class="w-3.5 h-3.5"></i>
+        </button>
+      </div>
+
+      <!-- Quick prompts -->
+      <div class="flex flex-wrap gap-2 text-xs text-slate-400">
+        <span>Try asking:</span>
+        <button onclick="setPromptAndSend('What should I focus on this week?')" class="bg-slate-800 hover:bg-slate-700 text-slate-300 px-2.5 py-1 rounded-lg">"What should I focus on this week?"</button>
+        <button onclick="setPromptAndSend('I feel stuck and confused by errors')" class="bg-slate-800 hover:bg-slate-700 text-slate-300 px-2.5 py-1 rounded-lg">"I feel stuck and confused by errors"</button>
+        <button onclick="setPromptAndSend('Will companies hire me from State Board?')" class="bg-slate-800 hover:bg-slate-700 text-slate-300 px-2.5 py-1 rounded-lg">"Will companies hire me from State Board?"</button>
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- TAB 7: INSTITUTION DASHBOARD -->
+    <!-- ============================================================ -->
+    <div id="tab-institution" class="tab-content hidden flex flex-col gap-6">
+      
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 text-center">
+          <div class="text-xs text-slate-400 uppercase font-semibold">Cohort Size</div>
+          <div class="text-2xl font-black text-slate-100 mt-1">60</div>
+          <div class="text-[10px] text-slate-400">Across 6 Branches</div>
+        </div>
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 text-center">
+          <div class="text-xs text-slate-400 uppercase font-semibold">Avg Job Readiness</div>
+          <div class="text-2xl font-black text-sherpa-cyan mt-1">54%</div>
+          <div class="text-[10px] text-emerald-400">+14% vs Last Sem</div>
+        </div>
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 text-center">
+          <div class="text-xs text-slate-400 uppercase font-semibold">At-Risk Learners</div>
+          <div class="text-2xl font-black text-rose-400 mt-1">11</div>
+          <div class="text-[10px] text-rose-400">Needs Mentorship</div>
+        </div>
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 text-center">
+          <div class="text-xs text-slate-400 uppercase font-semibold">Verified Proofs</div>
+          <div class="text-2xl font-black text-emerald-400 mt-1">142</div>
+          <div class="text-[10px] text-emerald-400">Audited Projects</div>
+        </div>
+      </div>
+
+      <!-- Cohort Bar Charts -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-5">
+          <h4 class="font-bold text-slate-100 text-sm mb-3">Top 5 Missing Skills Across Cohort</h4>
+          <div class="h-60 flex items-center justify-center">
+            <canvas id="missingSkillsChart"></canvas>
+          </div>
+        </div>
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-5">
+          <h4 class="font-bold text-slate-100 text-sm mb-3">Readiness by Educational Board</h4>
+          <div class="h-60 flex items-center justify-center">
+            <canvas id="boardChart"></canvas>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- TAB 8: JARGON TRANSLATOR -->
+    <!-- ============================================================ -->
+    <div id="tab-jargon" class="tab-content hidden flex flex-col gap-6">
+      
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-4">
+        <div class="flex items-center gap-3 mb-2">
+          <i data-lucide="book" class="w-5 h-5 text-sherpa-cyan"></i>
+          <h3 class="font-bold text-slate-100 text-sm">Tech Jargon Translator (Tanglish + English)</h3>
+        </div>
+        <p class="text-xs text-slate-400 mb-4">No gatekeeping. Clear, relatable real-world analogies in Tamil-English.</p>
+        <input type="text" id="jargon-search" oninput="searchJargon(this.value)" placeholder="Search terms (e.g. Hackathon, GitHub, API, ATS, Portfolio)..." class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-slate-200 outline-none focus:ring-1 focus:ring-sherpa-teal">
+      </div>
+
+      <div id="jargon-grid" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <!-- Rendered dynamically -->
+      </div>
+
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- LIVE AGENT COLLABORATION LOG DRAWER -->
+    <!-- ============================================================ -->
+    <div class="border border-slate-800 bg-slate-900/90 rounded-xl p-4 text-xs font-mono">
+      <div class="flex items-center justify-between mb-2">
+        <span class="text-slate-400 font-semibold flex items-center gap-1.5">
+          <i data-lucide="activity" class="w-3.5 h-3.5 text-sherpa-teal"></i> Live Multi-Agent Event Bus (7 Swarm Hand-Offs)
+        </span>
+        <span class="text-[10px] text-sherpa-teal bg-sherpa-teal/10 px-2 py-0.5 rounded border border-sherpa-teal/30">
+          Reactive Wakeup
+        </span>
+      </div>
+      <div id="live-agent-log" class="flex flex-col gap-1.5 max-h-36 overflow-y-auto custom-scrollbar">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-slate-800/80 bg-slate-950 py-4 mt-auto text-xs text-slate-500 text-center">
+    SkillSherpa — The Trust Layer for Skills • Built with ❤️ for Hackathon Demo
+  </footer>
+
+  <!-- APPLICATION LOGIC SCRIPT -->
+  <script>
+    // INITIAL DATA & STATE
+    const personas = {
+      arun: {
+        name: "Arun Kumar",
+        avatar: "🏕️",
+        board: "State Board (Tamil Medium)",
+        branch: "Information Technology",
+        target_role: "Full Stack Developer",
+        learner_type: "Foundation",
+        bio: "Arun comes from a rural Tamil-medium State Board background. Knows basic HTML, feels anxious about English interviews. Guided by zero-jargon small wins and Tanglish assistance.",
+        readiness: 33,
+        calibration: 90,
+        selfRatings: {"HTML/CSS": 3, "JavaScript": 1, "React": 1, "Node.js": 1, "SQL": 1},
+        verifiedSkills: {
+          "HTML/CSS": { level: 2, score: 88, viva: 85, repo: "https://github.com/arun-dev/state-board-notes-portal", date: "2026-10-15" }
+        },
+        failedAttempts: [
+          { skill: "JavaScript", score: 42, date: "2026-10-22", note: "Tripped on async callbacks. Curator added lighter practice drills." }
+        ]
+      },
+      meena: {
+        name: "Meena Sundaram",
+        avatar: "🧬",
+        board: "CBSE",
+        branch: "Biotechnology",
+        target_role: "Bioinformatics Analyst",
+        learner_type: "Bridge",
+        bio: "Meena is a B.Tech Biotech student with deep genetics intuition and basic Python. Her biology background is framed as a massive superpower.",
+        readiness: 58,
+        calibration: 88,
+        selfRatings: {"Biology Domain Knowledge": 5, "Python": 2, "Biopython & Genomic Data": 1, "SQL": 1},
+        verifiedSkills: {
+          "Biology Domain Knowledge": { level: 4, score: 96, viva: 94, repo: "https://github.com/meena-bio/crispr-target-pathway-audit", date: "2026-09-20" },
+          "Python": { level: 2, score: 78, viva: 75, repo: "https://github.com/meena-bio/dna-fasta-gc-calculator", date: "2026-10-05" }
+        },
+        failedAttempts: []
+      },
+      karthik: {
+        name: "Karthik Raja",
+        avatar: "⚡",
+        board: "CBSE",
+        branch: "Computer Science",
+        target_role: "Full Stack Developer",
+        learner_type: "Pressure-relief",
+        bio: "Karthik is strong in C and Python DSA but burned out by toxic streaks and competitive LeetCode. Thrives under calm agency and project autonomy.",
+        readiness: 62,
+        calibration: 85,
+        selfRatings: {"HTML/CSS": 3, "Git & GitHub": 4, "JavaScript": 2, "React": 1, "Node.js": 1, "SQL": 4},
+        verifiedSkills: {
+          "SQL": { level: 3, score: 92, viva: 90, repo: "https://github.com/karthik-r/campus-placement-db-optimizer", date: "2026-09-10" },
+          "Git & GitHub": { level: 3, score: 95, viva: 88, repo: "https://github.com/karthik-r/dotfiles-developer-setup", date: "2026-09-18" },
+          "HTML/CSS": { level: 2, score: 82, viva: 78, repo: "https://github.com/karthik-r/minimalist-dev-portfolio", date: "2026-10-02" }
+        },
+        failedAttempts: [
+          { skill: "React", score: 45, date: "2026-10-25", note: "Confusion on useEffect dependency arrays. Removed streak penalties." }
+        ]
+      }
+    };
+
+    let currentUser = personas.arun;
+    let is100DaysLater = false;
+    let radarChartInstance = null;
+    let calibrationChartInstance = null;
+
+    const jargons = [
+      { term: "Hackathon", eng: "24-48 hr sprint building a real software prototype with a team.", tang: "Coding thiruvizha maadhiri! Chinna team-ah serndhu 24-48 hours-la working app pannanum. Bayame vendam, mentors guide pannuvaanga.", tip: "Zero experience required — start in beginner tracks!" },
+      { term: "GitHub", eng: "Cloud platform storing version-controlled code and commits.", tang: "Programmers-oda cloud locker. Yar eppo enna change pannanga-nu line-by-line track aagum. Recruiter unga project code-ah paarka use aagum.", tip: "2 clean projects on GitHub beat 10 certificates." },
+      { term: "Open Source", eng: "Public software code freely inspectable and improvable by anyone.", tang: "Yaru venaalum code-ah eduthu use pannalaam, improve pannalaam. Typo fix panna kooda contribute pannalaam!", tip: "Search for 'good-first-issue' tags." },
+      { term: "API", eng: "Messenger allowing two separate programs to communicate and exchange data.", tang: "Restaurant-la Waiter maadhiri! Neenga menu paathu order panna, waiter (API) kitchen-la irundhu food eduthu varuvaaru.", tip: "Weather apps use APIs to fetch live rain alerts." },
+      { term: "ATS (Applicant Tracking)", eng: "Automated software scanning resumes for keywords before human review.", tang: "HR padikradhukku munnadi oru computer software scan pannum. Fancy design avoid panni, clean text & verified skills podanum.", tip: "Use plain single-column format and verified skills." },
+      { term: "Portfolio", eng: "Curated collection of live projects proving what you can build.", tang: "Certificates mattum kaataama, 'Naan build panna working apps idho'-nu unga thiramaya prove panra showcase.", tip: "Three live apps > twenty video completion certificates." }
+    ];
+
+    const opportunities = [
+      { id: 1, title: "Tamil Nadu Student Innovation Hackathon", org: "Anna University Incubator", type: "Hackathon", location: "Chennai / Hybrid", perk: "₹1,50,000 Prize Pool", req: {"HTML/CSS": 2}, beginner: true, why: "Dedicated regional beginner track with zero prerequisite barrier." },
+      { id: 2, title: "Junior Frontend Web Dev Intern", org: "FinNest Labs", type: "Internship", location: "Bengaluru", perk: "₹18,000 / month", req: {"HTML/CSS": 2, "JavaScript": 2}, beginner: false, why: "Direct bridge into modern frontend teams once core JS is verified." },
+      { id: 3, title: "Open Source Docs Contributor", org: "Mozilla Community", type: "Open Source", location: "Remote", perk: "Contributor Badge", req: {"HTML/CSS": 1}, beginner: true, why: "First public contribution fixing broken guides and formatting." },
+      { id: 4, title: "Full Stack React & Node Intern", org: "HyperCart E-Commerce", type: "Internship", location: "Remote", perk: "₹25,000 / month", req: {"React": 3, "Node.js": 3}, beginner: false, why: "Requires verified full-stack architecture evidence." },
+      { id: 5, title: "Bioinformatics Pipeline Fellow", org: "CSIR-IGIB", type: "Scholarship", location: "New Delhi / Remote", perk: "₹20,000 / month", req: {"Biology Domain Knowledge": 3, "Python": 2}, beginner: true, why: "Explicitly values life sciences domain background alongside Python." },
+      { id: 6, title: "Kaggle Community Dataset Sprint", org: "Kaggle", type: "Hackathon", location: "Online", perk: "$5,000 Pool", req: {"Python": 2}, beginner: true, why: "Fast way to demonstrate exploratory data analysis publicly." }
+    ];
+
+    const agentLogs = [
+      { time: "10:14:02", from: "OrchestratorAgent", to: "ProfilerAgent", text: "Initialized zero-assumption intake profile." },
+      { time: "10:14:03", from: "ProfilerAgent", to: "GapAnalystAgent", text: "Classified as Foundation profile (Vernacular background). Recommended Tanglish + Pressure-Free." },
+      { time: "10:14:04", from: "GapAnalystAgent", to: "CuratorAgent", text: "Evaluated skills: HTML/CSS verified at Level 2. Critical gaps in JavaScript & React." },
+      { time: "10:14:05", from: "CuratorAgent", to: "MentorAgent", text: "Assembled Mountain Trail: Camp 1 (JavaScript Async) ➔ Camp 2 (React Essentials)." }
+    ];
+
+    let chatHistory = [
+      { role: "assistant", text: "Vanakkam Arun! 🧗‍♂️ I am your Sherpa. We climb this mountain one camp at a time — zero pressure, pure verified mastery. Bayapadama start pannunga! How are you feeling today?" }
+    ];
+
+    // INITIALIZATION
+    window.onload = function() {
+      lucide.createIcons();
+      initCharts();
+      renderAll();
+    };
+
+    function setPersona(key) {
+      currentUser = personas[key];
+      is100DaysLater = false;
+      document.getElementById('toggle-sim-100').checked = false;
+
+      // Update button styles
+      ['arun', 'meena', 'karthik'].forEach(k => {
+        const btn = document.getElementById(`nav-btn-${k}`);
+        if (k === key) {
+          btn.classList.add('bg-sherpa-teal/20', 'border-sherpa-teal', 'text-sherpa-teal');
+        } else {
+          btn.classList.remove('bg-sherpa-teal/20', 'border-sherpa-teal', 'text-sherpa-teal');
+        }
+      });
+
+      // Update greeting in chat
+      if (currentUser.learner_type === "Foundation") {
+        chatHistory = [{ role: "assistant", text: `Vanakkam ${currentUser.name.split(' ')[0]}! 🧗‍♂️ Sherpa is here with you. Step by step, no stress, pure mastery. What shall we tackle today?` }];
+      } else if (currentUser.learner_type === "Bridge") {
+        chatHistory = [{ role: "assistant", text: `Welcome ${currentUser.name.split(' ')[0]}! 🧬 Your biology foundation is a massive asset. Let's connect Python to genomic sequences today!` }];
+      } else {
+        chatHistory = [{ role: "assistant", text: `Hey ${currentUser.name.split(' ')[0]}! ⚡ Zero countdown clocks, zero streak penalties. We focus 100% on high-autonomy engineering.` }];
+      }
+
+      addAgentLog("OrchestratorAgent", "AllAgents", `Swapped active persona to '${currentUser.name}' (${currentUser.learner_type}). Recomputed radar & gaps.`);
+      renderAll();
+    }
+
+    function changeRole(newRole) {
+      currentUser.target_role = newRole;
+      document.getElementById('banner-role-badge').innerText = `Target: ${newRole}`;
+      addAgentLog("OrchestratorAgent", "GapAnalystAgent", `Career summit changed to '${newRole}'. Re-routing mountain trail.`);
+      renderAll();
+    }
+
+    function toggleSimulate100Days(checked) {
+      is100DaysLater = checked;
+      const badge = document.getElementById('metric-expiry-state');
+      const sub = document.getElementById('metric-expiry-sub');
+      
+      if (checked) {
+        badge.innerText = "🔴 Expired (>90d)";
+        badge.className = "text-sm font-bold text-rose-400 mt-1";
+        sub.innerText = "Re-verification required";
+        addAgentLog("OrchestratorAgent", "OpportunityAgent", "Triggered event: skill_expired (+100 days simulated). Credential freshness decayed.");
+      } else {
+        badge.innerText = "🟢 Valid";
+        badge.className = "text-sm font-bold text-emerald-400 mt-1";
+        sub.innerText = "Fresh (<90 days)";
+        addAgentLog("OrchestratorAgent", "OpportunityAgent", "Reset timeline simulation to current day.");
+      }
+      renderPassportCredentials();
+    }
+
+    function addAgentLog(from, to, text) {
+      const now = new Date().toTimeString().split(' ')[0];
+      agentLogs.unshift({ time: now, from, to, text });
+      if (agentLogs.length > 20) agentLogs.pop();
+      renderAgentLogs();
+    }
+
+    function renderAgentLogs() {
+      const container = document.getElementById('live-agent-log');
+      container.innerHTML = agentLogs.map(l => `
+        <div class="border-l-2 border-sherpa-teal bg-slate-950/60 px-2 py-1 rounded-r">
+          <span class="text-slate-500">[${l.time}]</span> 
+          <strong class="text-slate-200">${l.from}</strong> 
+          <span class="text-sherpa-cyan">➔ @${l.to}</span>: 
+          <span class="text-slate-300">${l.text}</span>
+        </div>
+      `).join('');
+    }
+
+    function renderAll() {
+      // Header metrics
+      document.getElementById('banner-bio').innerText = currentUser.bio;
+      document.getElementById('metric-readiness').innerText = `${currentUser.readiness}%`;
+      document.getElementById('metric-calibration').innerText = `${currentUser.calibration}/100`;
+
+      // Render tab components
+      renderGapsList();
+      renderRoadmap();
+      renderPassportCredentials();
+      renderFailedHistory();
+      renderOpportunities();
+      renderChat();
+      renderJargon();
+      renderAgentLogs();
+      updateCharts();
+      lucide.createIcons();
+    }
+
+    // TAB SWITCHING
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('border-sherpa-teal', 'text-sherpa-teal');
+        btn.classList.add('border-transparent', 'text-slate-400');
+      });
+
+      document.getElementById(`tab-${tabId}`).classList.remove('hidden');
+      const activeBtn = document.getElementById(`tab-btn-${tabId}`);
+      activeBtn.classList.add('border-sherpa-teal', 'text-sherpa-teal');
+      activeBtn.classList.remove('border-transparent', 'text-slate-400');
+      lucide.createIcons();
+    }
+
+    // CHARTS
+    function initCharts() {
+      // Radar Chart
+      const ctxRadar = document.getElementById('radarChart').getContext('2d');
+      radarChartInstance = new Chart(ctxRadar, {
+        type: 'radar',
+        data: {
+          labels: ['HTML/CSS', 'Git', 'JavaScript', 'React', 'Node.js', 'SQL'],
+          datasets: [
+            {
+              label: 'Target Requirement',
+              data: [3, 2, 3, 3, 3, 3],
+              borderColor: '#38BDF8',
+              backgroundColor: 'rgba(56, 189, 248, 0.15)',
+              borderDash: [5, 5],
+              pointRadius: 2
+            },
+            {
+              label: 'Verified Evidence',
+              data: [2, 0, 0, 0, 0, 0],
+              borderColor: '#14B8A6',
+              backgroundColor: 'rgba(20, 184, 166, 0.4)',
+              pointRadius: 3
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            r: {
+              min: 0,
+              max: 5,
+              ticks: { display: false, stepSize: 1 },
+              grid: { color: '#334155' },
+              angleLines: { color: '#334155' },
+              pointLabels: { color: '#CBD5E1', font: { size: 10 } }
+            }
+          },
+          plugins: {
+            legend: { labels: { color: '#CBD5E1', boxWidth: 12, font: { size: 10 } } }
+          }
+        }
+      });
+
+      // Calibration Bar Chart
+      const ctxCalib = document.getElementById('calibrationChart').getContext('2d');
+      calibrationChartInstance = new Chart(ctxCalib, {
+        type: 'bar',
+        data: {
+          labels: ['HTML/CSS', 'Git', 'JavaScript', 'React', 'SQL'],
+          datasets: [
+            {
+              label: 'Self Rating',
+              data: [3, 1, 1, 1, 1],
+              backgroundColor: '#38BDF8'
+            },
+            {
+              label: 'Verified Level',
+              data: [2, 0, 0, 0, 0],
+              backgroundColor: '#10B981'
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            y: { min: 0, max: 5, grid: { color: '#334155' }, ticks: { color: '#94A3B8' } },
+            x: { grid: { display: false }, ticks: { color: '#94A3B8' } }
+          },
+          plugins: {
+            legend: { labels: { color: '#CBD5E1', boxWidth: 12, font: { size: 10 } } }
+          }
+        }
+      });
+
+      // Institution Missing Skills
+      const ctxMissing = document.getElementById('missingSkillsChart').getContext('2d');
+      new Chart(ctxMissing, {
+        type: 'bar',
+        data: {
+          labels: ['React', 'Node.js', 'Next.js', 'Deep Learning', 'SQL'],
+          datasets: [{
+            data: [78, 65, 62, 55, 40],
+            backgroundColor: ['#EF4444', '#F59E0B', '#F59E0B', '#38BDF8', '#10B981']
+          }]
+        },
+        options: {
+          indexAxis: 'y',
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            x: { max: 100, grid: { color: '#334155' }, ticks: { color: '#94A3B8' } },
+            y: { grid: { display: false }, ticks: { color: '#CBD5E1' } }
+          },
+          plugins: { legend: { display: false } }
+        }
+      });
+
+      // Institution Board Chart
+      const ctxBoard = document.getElementById('boardChart').getContext('2d');
+      new Chart(ctxBoard, {
+        type: 'bar',
+        data: {
+          labels: ['State Board', 'CBSE', 'ICSE / Other'],
+          datasets: [{
+            data: [42, 68, 71],
+            backgroundColor: ['#14B8A6', '#38BDF8', '#8B5CF6']
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            y: { max: 100, grid: { color: '#334155' }, ticks: { color: '#94A3B8' } },
+            x: { grid: { display: false }, ticks: { color: '#CBD5E1' } }
+          },
+          plugins: { legend: { display: false } }
+        }
+      });
+    }
+
+    function updateCharts() {
+      if (!radarChartInstance || !calibrationChartInstance) return;
+
+      const skills = Object.keys(currentUser.selfRatings);
+      const selfVals = skills.map(s => currentUser.selfRatings[s]);
+      const verVals = skills.map(s => currentUser.verifiedSkills[s] ? currentUser.verifiedSkills[s].level : 0);
+
+      // Update Calibration
+      calibrationChartInstance.data.labels = skills;
+      calibrationChartInstance.data.datasets[0].data = selfVals;
+      calibrationChartInstance.data.datasets[1].data = verVals;
+      calibrationChartInstance.update();
+
+      // Update Radar
+      radarChartInstance.data.labels = skills;
+      radarChartInstance.data.datasets[0].data = skills.map(() => 3);
+      radarChartInstance.data.datasets[1].data = verVals;
+      radarChartInstance.update();
+    }
+
+    // RENDER DASHBOARD GAPS
+    function renderGapsList() {
+      const container = document.getElementById('dashboard-gaps-list');
+      const gaps = [
+        { skill: "HTML/CSS", target: 3, verified: currentUser.verifiedSkills["HTML/CSS"] ? currentUser.verifiedSkills["HTML/CSS"].level : 0, weight: 1.0 },
+        { skill: "JavaScript", target: 3, verified: currentUser.verifiedSkills["JavaScript"] ? currentUser.verifiedSkills["JavaScript"].level : 0, weight: 1.5 },
+        { skill: "React", target: 3, verified: currentUser.verifiedSkills["React"] ? currentUser.verifiedSkills["React"].level : 0, weight: 2.0 },
+        { skill: "Node.js", target: 3, verified: currentUser.verifiedSkills["Node.js"] ? currentUser.verifiedSkills["Node.js"].level : 0, weight: 2.0 },
+        { skill: "SQL", target: 3, verified: currentUser.verifiedSkills["SQL"] ? currentUser.verifiedSkills["SQL"].level : 0, weight: 1.5 }
+      ];
+
+      container.innerHTML = gaps.map(g => {
+        const delta = Math.max(0, g.target - g.verified);
+        const isMastered = delta === 0;
+        const badgeColor = isMastered ? 'bg-emerald-950 text-emerald-400 border-emerald-800' : (delta === 1 ? 'bg-amber-950 text-amber-400 border-amber-800' : 'bg-rose-950 text-rose-400 border-rose-800');
+        const badgeText = isMastered ? 'Mastered' : (delta === 1 ? 'Moderate Gap' : 'Critical Gap');
+
+        return `
+          <div class="bg-slate-950/70 border border-slate-800 rounded-lg p-3 flex items-center justify-between">
+            <div>
+              <span class="font-bold text-slate-200 text-xs">${g.skill}</span>
+              <span class="text-[10px] text-slate-500 ml-2">Weight: ${g.weight}x</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="text-[10px] px-2 py-0.5 rounded-full border ${badgeColor} font-semibold">${badgeText}</span>
+              <span class="text-xs font-mono font-bold text-sherpa-cyan">Lvl ${g.verified}/${g.target}</span>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    // RENDER ROADMAP
+    function renderRoadmap() {
+      const container = document.getElementById('roadmap-camps-list');
+      const camps = [
+        { camp: "Camp 1", skill: "HTML/CSS", status: "Mastered", desc: "Semantic tags, CSS Flexbox, Grid, and mobile-first layouts.", prereqs: "None", time: "12 hrs" },
+        { camp: "Camp 2", skill: "JavaScript Async", status: "Current", desc: "ES6+, Promises, async/await, closures, and DOM manipulation.", prereqs: "HTML/CSS", time: "16 hrs" },
+        { camp: "Camp 3", skill: "React Essentials", status: "Locked", desc: "Component architecture, hooks lifecycle, props, and custom states.", prereqs: "JavaScript Async", time: "20 hrs" },
+        { camp: "Camp 4", skill: "Node.js REST APIs", status: "Locked", desc: "Express routing, JSON middleware, error handling, and mock DBs.", prereqs: "JavaScript Async", time: "18 hrs" }
+      ];
+
+      container.innerHTML = camps.map((c, i) => {
+        const isMastered = c.status === "Mastered";
+        const isCurrent = c.status === "Current";
+        const borderColor = isMastered ? 'border-emerald-600' : (isCurrent ? 'border-sherpa-teal' : 'border-slate-800');
+
+        return `
+          <div class="bg-slate-900 border ${borderColor} rounded-xl p-5 relative">
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 mb-3">
+              <div>
+                <span class="text-xs font-bold uppercase tracking-wider text-slate-400">${c.camp}</span>
+                <h4 class="font-extrabold text-lg text-slate-100">${c.skill}</h4>
+              </div>
+              <div>
+                ${isMastered ? '<span class="text-xs bg-emerald-950 text-emerald-400 border border-emerald-800 px-3 py-1 rounded-full font-bold">🟢 Camp Cleared</span>' :
+                  (isCurrent ? '<span class="text-xs bg-sherpa-teal/20 text-sherpa-teal border border-sherpa-teal px-3 py-1 rounded-full font-bold">⛺ Current Objective</span>' :
+                  `<span class="text-xs bg-slate-800 text-slate-400 border border-slate-700 px-3 py-1 rounded-full font-medium">🔒 Requires ${c.prereqs}</span>`)}
+              </div>
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed mb-4">${c.desc}</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 pt-3 border-t border-slate-800 text-xs">
+              <div class="bg-slate-950 p-2.5 rounded-lg border border-slate-800">
+                <span class="text-slate-400 font-semibold block mb-1">📚 Free Curated Resources:</span>
+                <span class="text-slate-300">• freeCodeCamp Full Course (Video)</span><br/>
+                <span class="text-slate-300">• MDN Documentation Labs (Tutorial)</span>
+              </div>
+              <div class="bg-slate-950 p-2.5 rounded-lg border border-slate-800 flex flex-col justify-between">
+                <div>
+                  <span class="text-slate-400 font-semibold block mb-1">🛠️ Hands-on Artifact:</span>
+                  <span class="text-slate-300">Working GitHub repo with live deploy</span>
+                </div>
+                ${isCurrent ? `
+                  <button onclick="switchTab('assess')" class="mt-2 text-xs bg-sherpa-teal text-slate-950 font-bold px-3 py-1.5 rounded-md hover:bg-sherpa-tealDark transition self-end">
+                    Take Verification Challenge ➔
+                  </button>
+                ` : ''}
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    // RENDER PASSPORT CREDENTIALS
+    function renderPassportCredentials() {
+      const container = document.getElementById('passport-credentials-list');
+      const creds = currentUser.verifiedSkills;
+
+      if (Object.keys(creds).length === 0) {
+        container.innerHTML = `<div class="text-xs text-slate-400 p-4 bg-slate-900 rounded-xl">No verified skills yet. Complete an expedition challenge in Assess to stamp your passport.</div>`;
+        return;
+      }
+
+      container.innerHTML = Object.keys(creds).map(skillName => {
+        const item = creds[skillName];
+        const statusBadge = is100DaysLater ?
+          `<span class="text-xs bg-rose-950 text-rose-400 border border-rose-800 px-2.5 py-0.5 rounded-full font-bold">🔴 Expired (&gt;90d)</span>` :
+          `<span class="text-xs bg-emerald-950 text-emerald-400 border border-emerald-800 px-2.5 py-0.5 rounded-full font-bold">🟢 Valid Credential</span>`;
+
+        return `
+          <div class="bg-slate-900 border ${is100DaysLater ? 'border-rose-900' : 'border-emerald-900'} rounded-xl p-4">
+            <div class="flex justify-between items-start mb-2">
+              <div>
+                <span class="text-[11px] text-slate-400 uppercase font-semibold">Verified Proof</span>
+                <h4 class="font-bold text-slate-100 text-sm">${skillName} — Level ${item.level}</h4>
+                <div class="text-[11px] text-slate-400">Verified: ${item.date} • Score: ${item.score}% • Viva: ${item.viva}%</div>
+              </div>
+              <div>${statusBadge}</div>
+            </div>
+            <div class="mt-2 text-xs">
+              <span class="text-slate-400">Auditable Repository:</span>
+              <a href="${item.repo}" target="_blank" class="text-sherpa-cyan hover:underline ml-1 font-mono">${item.repo} ↗</a>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function renderFailedHistory() {
+      const container = document.getElementById('passport-failed-list');
+      if (currentUser.failedAttempts.length === 0) {
+        container.innerHTML = `<div class="text-xs text-slate-500 italic p-2">No failed attempts recorded.</div>`;
+        return;
+      }
+      container.innerHTML = currentUser.failedAttempts.map(f => `
+        <div class="bg-slate-950 border-l-4 border-rose-500 p-3 rounded-r-lg text-xs">
+          <div class="flex justify-between font-bold text-slate-300">
+            <span>${f.skill} Challenge (${f.date})</span>
+            <span class="text-rose-400">${f.score}%</span>
+          </div>
+          <p class="text-slate-400 mt-1">${f.note}</p>
+        </div>
+      `).join('');
+    }
+
+    function filterCandidates() {
+      const skill = document.getElementById('recruiter-skill-filter').value;
+      const lvl = parseInt(document.getElementById('recruiter-level-filter').value);
+      const container = document.getElementById('recruiter-results');
+
+      const mockCandidates = [
+        { name: "Arun Kumar", role: "Full Stack", skill: "HTML/CSS", lvl: 2, calib: 90 },
+        { name: "Meena Sundaram", role: "Bioinformatics", skill: "Biology", lvl: 4, calib: 88 },
+        { name: "Karthik Raja", role: "Full Stack", skill: "SQL", lvl: 3, calib: 85 },
+        { name: "Divya S.", role: "Frontend", skill: "HTML/CSS", lvl: 3, calib: 92 },
+        { name: "Siddharth V.", role: "AI/ML", skill: "Python", lvl: 3, calib: 87 }
+      ];
+
+      const filtered = mockCandidates.filter(c => (skill === "All" || c.skill.includes(skill)) && c.lvl >= lvl);
+      
+      container.innerHTML = filtered.map(c => `
+        <div class="bg-slate-950 p-2.5 rounded border border-slate-800 text-xs">
+          <div class="font-bold text-slate-200">${c.name}</div>
+          <div class="text-[11px] text-sherpa-cyan">${c.skill} (Lvl ${c.lvl}) • Calibration: ${c.calib}/100</div>
+        </div>
+      `).join('') || `<div class="text-slate-500 text-xs">No candidates match criteria.</div>`;
+    }
+
+    // OPPORTUNITIES
+    function renderOpportunities(filter = 'all') {
+      const container = document.getElementById('opps-list-container');
+      const list = opportunities.filter(o => {
+        if (filter === 'beginner') return o.beginner;
+        if (filter === 'matched') return o.id === 1 || o.id === 3;
+        return true;
+      });
+
+      container.innerHTML = list.map(o => `
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-start gap-2 mb-2">
+              <span class="text-xs bg-sherpa-teal/20 text-sherpa-teal border border-sherpa-teal/30 px-2.5 py-0.5 rounded-full font-semibold">${o.type}</span>
+              <span class="text-xs text-slate-400">📍 ${o.location}</span>
+            </div>
+            <h4 class="font-bold text-slate-100 text-sm mb-1">${o.title}</h4>
+            <div class="text-xs text-sherpa-cyan font-medium mb-2">${o.org} • ${o.perk}</div>
+            <p class="text-xs text-slate-400 leading-relaxed">${o.why}</p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-800 flex justify-between items-center">
+            <span class="text-[10px] text-slate-500 font-mono">Verified Match</span>
+            <button class="text-xs bg-sherpa-teal text-slate-950 font-bold px-3 py-1 rounded hover:bg-sherpa-tealDark transition">Apply ↗</button>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function filterOpps(f) {
+      renderOpportunities(f);
+    }
+
+    // CHAT
+    function renderChat() {
+      const container = document.getElementById('chat-messages');
+      container.innerHTML = chatHistory.map(m => `
+        <div class="flex gap-2.5 ${m.role === 'user' ? 'justify-end' : 'justify-start'}">
+          ${m.role === 'assistant' ? '<span class="text-lg">🧗‍♂️</span>' : ''}
+          <div class="max-w-[80%] rounded-xl px-3.5 py-2.5 text-xs leading-relaxed ${m.role === 'user' ? 'bg-sherpa-teal text-slate-950 font-medium' : 'bg-slate-900 border border-slate-800 text-slate-200'}">
+            ${m.text}
+          </div>
+        </div>
+      `).join('');
+      container.scrollTop = container.scrollHeight;
+    }
+
+    function sendChatMessage() {
+      const input = document.getElementById('chat-input');
+      const val = input.value.trim();
+      if (!val) return;
+
+      chatHistory.push({ role: "user", text: val });
+      input.value = "";
+      renderChat();
+
+      setTimeout(() => {
+        let reply = "I hear you! In the mountain climb of software engineering, consistent small proofs beat cramming. Focus on one commit today, and your confidence will compound.";
+        if (val.toLowerCase().includes("stuck") || val.toLowerCase().includes("error")) {
+          reply = "Calm-ah irunga, idhu romba normal! 🧗‍♂️ Over 85% of programmers get stuck on the exact same error boundaries. Mistakes are proof you are learning.";
+        } else if (val.toLowerCase().includes("state board") || val.toLowerCase().includes("hire")) {
+          reply = "Recruiters care about what you can DO, not where you went to school. When you show 2 verified GitHub repositories and defend your code in a viva, you beat 95% of applicants.";
+        }
+        chatHistory.push({ role: "assistant", text: reply });
+        addAgentLog("MentorAgent", "Learner", `Responded to learner question in chat.`);
+        renderChat();
+      }, 500);
+    }
+
+    function setPromptAndSend(p) {
+      document.getElementById('chat-input').value = p;
+      sendChatMessage();
+    }
+
+    // JARGON TRANSLATOR
+    function renderJargon(query = "") {
+      const container = document.getElementById('jargon-grid');
+      const filtered = jargons.filter(j => j.term.toLowerCase().includes(query.toLowerCase()) || j.eng.toLowerCase().includes(query.toLowerCase()));
+
+      container.innerHTML = filtered.map(j => `
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-4">
+          <div class="flex justify-between items-center mb-2">
+            <h4 class="font-bold text-sherpa-cyan text-sm">${j.term}</h4>
+            <span class="text-[10px] bg-slate-800 text-slate-400 px-2 py-0.5 rounded">Core Term</span>
+          </div>
+          <p class="text-xs text-slate-200 mb-2"><strong>In English:</strong> ${j.eng}</p>
+          <div class="bg-emerald-950/40 border-l-2 border-emerald-500 p-2 rounded-r text-xs text-emerald-300 mb-2">
+            🗣️ <strong>Tanglish:</strong> ${j.tang}
+          </div>
+          <div class="text-[11px] text-slate-400">💡 <strong>Sherpa Tip:</strong> ${j.tip}</div>
+        </div>
+      `).join('') || `<div class="text-slate-500 text-xs">No matching jargon found.</div>`;
+    }
+
+    function searchJargon(q) {
+      renderJargon(q);
+    }
+
+    // ASSESSMENT SUBMISSION
+    function submitAssessment(mode) {
+      const resultCard = document.getElementById('assess-result-card');
+      resultCard.classList.remove('hidden');
+
+      if (mode === 'fail') {
+        resultCard.innerHTML = `
+          <div class="border-l-4 border-rose-500 pl-4">
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-xs bg-rose-950 text-rose-400 border border-rose-800 px-2.5 py-0.5 rounded-full font-bold">🔴 Score: 40% (Re-plan Inserted)</span>
+              <span class="text-xs text-slate-400">AssessorAgent Evaluation</span>
+            </div>
+            <h4 class="font-bold text-slate-100 text-sm mb-1">Growth Opportunity: Foundational Revision Added</h4>
+            <p class="text-xs text-slate-300 leading-relaxed mb-3">
+              "Calm-ah irunga, idhu romba normal! 🧗‍♂️ Most engineers stumble on async event loop. 
+              CuratorAgent has inserted a bite-sized practice drill into Camp 2. No streak lost, readiness unchanged."
+            </p>
+            <div class="text-[11px] text-slate-400 font-mono">
+              Agent Collaboration Chain: AssessorAgent ➔ MentorAgent ➔ CuratorAgent
+            </div>
+          </div>
+        `;
+        addAgentLog("AssessorAgent", "MentorAgent", "Quiz completed: Score 40%. Triggered reassurance and adaptive revision.");
+      } else {
+        resultCard.innerHTML = `
+          <div class="border-l-4 border-emerald-500 pl-4">
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-xs bg-emerald-950 text-emerald-400 border border-emerald-800 px-2.5 py-0.5 rounded-full font-bold">🟢 Score: 92% (PASSED & VERIFIED)</span>
+              <span class="text-xs text-slate-400">Anti-Copy Clean (Viva 90%)</span>
+            </div>
+            <h4 class="font-bold text-slate-100 text-sm mb-1">🎉 Mastery Gate Cleared! Level 2 Verified</h4>
+            <p class="text-xs text-slate-300 leading-relaxed mb-3">
+              Your code defense viva demonstrated authentic originality and proper error handling. 
+              Skill stamped onto your Proof Passport! 4 new internships unlocked.
+            </p>
+            <div class="text-[11px] text-slate-400 font-mono">
+              Agent Collaboration Chain: AssessorAgent ➔ PassportSeal ➔ OpportunityAgent (Unlocked Matches)
+            </div>
+          </div>
+        `;
+        currentUser.verifiedSkills["JavaScript"] = { level: 2, score: 92, viva: 90, repo: "https://github.com/arun-dev/js-async-tracker", date: "2026-11-14" };
+        currentUser.readiness = 52;
+        addAgentLog("AssessorAgent", "OpportunityAgent", "JavaScript verified at Level 2! Unlocked 4 new junior opportunities.");
+        renderAll();
+      }
+      resultCard.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
