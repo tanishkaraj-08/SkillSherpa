@@ -1,0 +1,240 @@
+{
+  "Full Stack Developer": {
+    "title": "Full Stack Developer",
+    "category": "Software Engineering",
+    "description": "Build end-to-end web applications with modern frontend and backend architectures.",
+    "skills": {
+      "HTML/CSS": {
+        "weight": 1.0,
+        "target_level": 3,
+        "category": "Frontend"
+      },
+      "Git & GitHub": {
+        "weight": 1.0,
+        "target_level": 2,
+        "category": "Tooling"
+      },
+      "JavaScript": {
+        "weight": 1.5,
+        "target_level": 3,
+        "category": "Frontend"
+      },
+      "React": {
+        "weight": 2.0,
+        "target_level": 3,
+        "category": "Frontend"
+      },
+      "Node.js": {
+        "weight": 2.0,
+        "target_level": 3,
+        "category": "Backend"
+      },
+      "SQL": {
+        "weight": 1.5,
+        "target_level": 3,
+        "category": "Database"
+      }
+    },
+    "prerequisites": {
+      "JavaScript": [
+        "HTML/CSS"
+      ],
+      "React": [
+        "JavaScript",
+        "Git & GitHub"
+      ],
+      "Node.js": [
+        "JavaScript"
+      ],
+      "SQL": []
+    }
+  },
+  "Data Analyst": {
+    "title": "Data Analyst",
+    "category": "Data & Analytics",
+    "description": "Transform messy raw data into business insights, dashboards, and metric forecasts.",
+    "skills": {
+      "Excel & Spreadsheets": {
+        "weight": 1.0,
+        "target_level": 3,
+        "category": "Foundation"
+      },
+      "SQL": {
+        "weight": 2.0,
+        "target_level": 4,
+        "category": "Database"
+      },
+      "Python": {
+        "weight": 2.0,
+        "target_level": 3,
+        "category": "Programming"
+      },
+      "Pandas": {
+        "weight": 2.0,
+        "target_level": 3,
+        "category": "Data Analysis"
+      },
+      "Data Visualization": {
+        "weight": 1.5,
+        "target_level": 3,
+        "category": "Visualization"
+      },
+      "Statistics": {
+        "weight": 1.5,
+        "target_level": 3,
+        "category": "Math"
+      }
+    },
+    "prerequisites": {
+      "SQL": [
+        "Excel & Spreadsheets"
+      ],
+      "Pandas": [
+        "Python"
+      ],
+      "Data Visualization": [
+        "Pandas"
+      ],
+      "Statistics": []
+    }
+  },
+  "AI/ML Engineer": {
+    "title": "AI/ML Engineer",
+    "category": "Artificial Intelligence",
+    "description": "Design, train, evaluate and deploy machine learning models to production.",
+    "skills": {
+      "Python": {
+        "weight": 2.0,
+        "target_level": 4,
+        "category": "Programming"
+      },
+      "Linear Algebra & Calculus": {
+        "weight": 1.5,
+        "target_level": 3,
+        "category": "Math"
+      },
+      "Machine Learning": {
+        "weight": 2.0,
+        "target_level": 3,
+        "category": "Machine Learning"
+      },
+      "Deep Learning": {
+        "weight": 2.0,
+        "target_level": 3,
+        "category": "Deep Learning"
+      },
+      "MLOps & API Deployment": {
+        "weight": 1.5,
+        "target_level": 3,
+        "category": "Production"
+      }
+    },
+    "prerequisites": {
+      "Linear Algebra & Calculus": [],
+      "Machine Learning": [
+        "Python",
+        "Linear Algebra & Calculus"
+      ],
+      "Deep Learning": [
+        "Machine Learning"
+      ],
+      "MLOps & API Deployment": [
+        "Deep Learning"
+      ]
+    }
+  },
+  "Bioinformatics Analyst": {
+    "title": "Bioinformatics Analyst",
+    "category": "Biotech & Healthcare",
+    "description": "Analyze genomic, proteomic, and clinical dataset sequences using computational pipelines.",
+    "skills": {
+      "Biology Domain Knowledge": {
+        "weight": 2.0,
+        "target_level": 4,
+        "category": "Domain"
+      },
+      "Python": {
+        "weight": 2.0,
+        "target_level": 3,
+        "category": "Programming"
+      },
+      "Biopython & Genomic Data": {
+        "weight": 2.0,
+        "target_level": 3,
+        "category": "Specialized"
+      },
+      "SQL": {
+        "weight": 1.5,
+        "target_level": 2,
+        "category": "Database"
+      },
+      "Next-Gen Sequencing Basics": {
+        "weight": 1.5,
+        "target_level": 3,
+        "category": "Domain"
+      }
+    },
+    "prerequisites": {
+      "Biopython & Genomic Data": [
+        "Biology Domain Knowledge",
+        "Python"
+      ],
+      "Next-Gen Sequencing Basics": [
+        "Biopython & Genomic Data"
+      ],
+      "SQL": []
+    }
+  },
+  "Frontend Developer": {
+    "title": "Frontend Developer",
+    "category": "Software Engineering",
+    "description": "Craft responsive, accessible, interactive web interfaces with modern design systems.",
+    "skills": {
+      "HTML/CSS": {
+        "weight": 1.5,
+        "target_level": 4,
+        "category": "Frontend"
+      },
+      "Git & GitHub": {
+        "weight": 1.0,
+        "target_level": 2,
+        "category": "Tooling"
+      },
+      "JavaScript": {
+        "weight": 2.0,
+        "target_level": 4,
+        "category": "Frontend"
+      },
+      "Responsive Design & Tailwind": {
+        "weight": 1.5,
+        "target_level": 3,
+        "category": "Styling"
+      },
+      "React": {
+        "weight": 2.0,
+        "target_level": 3,
+        "category": "Frontend"
+      },
+      "Next.js": {
+        "weight": 1.5,
+        "target_level": 3,
+        "category": "Framework"
+      }
+    },
+    "prerequisites": {
+      "Responsive Design & Tailwind": [
+        "HTML/CSS"
+      ],
+      "JavaScript": [
+        "HTML/CSS"
+      ],
+      "React": [
+        "JavaScript",
+        "Git & GitHub"
+      ],
+      "Next.js": [
+        "React"
+      ]
+    }
+  }
+}

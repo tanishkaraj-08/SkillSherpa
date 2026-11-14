@@ -1,0 +1,2678 @@
+[
+  {
+    "id": "STU-1000",
+    "name": "Aadhira",
+    "branch": "Computer Science",
+    "board": "CBSE",
+    "target_role": "Full Stack Developer",
+    "readiness_score": 64,
+    "skills": {
+      "HTML/CSS": {
+        "verified_level": 2,
+        "target_level": 3,
+        "quiz_avg": 77,
+        "verified_days_ago": 33
+      },
+      "Git & GitHub": {
+        "verified_level": 1,
+        "target_level": 2,
+        "quiz_avg": 91,
+        "verified_days_ago": 74
+      },
+      "JavaScript": {
+        "verified_level": 2,
+        "target_level": 3,
+        "quiz_avg": 71,
+        "verified_days_ago": 8
+      },
+      "React": {
+        "verified_level": 1,
+        "target_level": 3,
+        "quiz_avg": 86,
+        "verified_days_ago": 8
+      },
+      "Node.js": {
+        "verified_level": 3,
+        "target_level": 3,
+        "quiz_avg": 90,
+        "verified_days_ago": 74
+      },
+      "SQL": {
+        "verified_level": 2,
+        "target_level": 3,
+        "quiz_avg": 88,
+        "verified_days_ago": 40
+      }
+    },
+    "at_risk": false
+  },
+  {
+    "id": "STU-1001",
+    "name": "Abhishek",
+    "branch": "Information Technology",
+    "board": "CBSE",
+    "target_role": "Data Analyst",
+    "readiness_score": 41,
+    "skills": {
+      "Excel & Spreadsheets": {
+        "verified_level": 1,
+        "target_level": 3,
+        "quiz_avg": 92,
+        "verified_days_ago": 59
+      },
+      "SQL": {
+        "verified_level": 2,
+        "target_level": 4,
+        "quiz_avg": 76,
+        "verified_days_ago": 48
+      },
+      "Python": {
+        "verified_level": 2,
+        "target_level": 3,
+        "quiz_avg": 73,
+        "verified_days_ago": 50
+      },
+      "Pandas": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Data Visualization": {
+        "verified_level": 1,
+        "target_level": 3,
+        "quiz_avg": 93,
+        "verified_days_ago": 63
+      },
+      "Statistics": {
+        "verified_level": 2,
+        "target_level": 3,
+        "quiz_avg": 72,
+        "verified_days_ago": 75
+      }
+    },
+    "at_risk": false
+  },
+  {
+    "id": "STU-1002",
+    "name": "Ananya",
+    "branch": "Electronics & Comm",
+    "board": "State Board",
+    "target_role": "AI/ML Engineer",
+    "readiness_score": 14,
+    "skills": {
+      "Python": {
+        "verified_level": 0,
+        "target_level": 4,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Linear Algebra & Calculus": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Machine Learning": {
+        "verified_level": 1,
+        "target_level": 3,
+        "quiz_avg": 92,
+        "verified_days_ago": 13
+      },
+      "Deep Learning": {
+        "verified_level": 1,
+        "target_level": 3,
+        "quiz_avg": 94,
+        "verified_days_ago": 42
+      },
+      "MLOps & API Deployment": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      }
+    },
+    "at_risk": true
+  },
+  {
+    "id": "STU-1003",
+    "name": "Arun",
+    "branch": "Biotechnology",
+    "board": "CBSE",
+    "target_role": "Bioinformatics Analyst",
+    "readiness_score": 29,
+    "skills": {
+      "Biology Domain Knowledge": {
+        "verified_level": 0,
+        "target_level": 4,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Python": {
+        "verified_level": 2,
+        "target_level": 3,
+        "quiz_avg": 90,
+        "verified_days_ago": 51
+      },
+      "Biopython & Genomic Data": {
+        "verified_level": 2,
+        "target_level": 3,
+        "quiz_avg": 76,
+        "verified_days_ago": 39
+      },
+      "SQL": {
+        "verified_level": 0,
+        "target_level": 2,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Next-Gen Sequencing Basics": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      }
+    },
+    "at_risk": false
+  },
+  {
+    "id": "STU-1004",
+    "name": "Bhavani",
+    "branch": "Mechanical Eng",
+    "board": "State Board",
+    "target_role": "Frontend Developer",
+    "readiness_score": 21,
+    "skills": {
+      "HTML/CSS": {
+        "verified_level": 0,
+        "target_level": 4,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Git & GitHub": {
+        "verified_level": 0,
+        "target_level": 2,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "JavaScript": {
+        "verified_level": 4,
+        "target_level": 4,
+        "quiz_avg": 82,
+        "verified_days_ago": 39
+      },
+      "Responsive Design & Tailwind": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "React": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Next.js": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      }
+    },
+    "at_risk": true
+  },
+  {
+    "id": "STU-1005",
+    "name": "Chirag",
+    "branch": "Data Science",
+    "board": "CBSE",
+    "target_role": "Full Stack Developer",
+    "readiness_score": 29,
+    "skills": {
+      "HTML/CSS": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Git & GitHub": {
+        "verified_level": 1,
+        "target_level": 2,
+        "quiz_avg": 96,
+        "verified_days_ago": 9
+      },
+      "JavaScript": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "React": {
+        "verified_level": 1,
+        "target_level": 3,
+        "quiz_avg": 76,
+        "verified_days_ago": 77
+      },
+      "Node.js": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "SQL": {
+        "verified_level": 3,
+        "target_level": 3,
+        "quiz_avg": 85,
+        "verified_days_ago": 55
+      }
+    },
+    "at_risk": false
+  },
+  {
+    "id": "STU-1006",
+    "name": "Deepak",
+    "branch": "Computer Science",
+    "board": "CBSE",
+    "target_role": "Data Analyst",
+    "readiness_score": 55,
+    "skills": {
+      "Excel & Spreadsheets": {
+        "verified_level": 1,
+        "target_level": 3,
+        "quiz_avg": 78,
+        "verified_days_ago": 22
+      },
+      "SQL": {
+        "verified_level": 3,
+        "target_level": 4,
+        "quiz_avg": 93,
+        "verified_days_ago": 79
+      },
+      "Python": {
+        "verified_level": 3,
+        "target_level": 3,
+        "quiz_avg": 82,
+        "verified_days_ago": 51
+      },
+      "Pandas": {
+        "verified_level": 1,
+        "target_level": 3,
+        "quiz_avg": 86,
+        "verified_days_ago": 68
+      },
+      "Data Visualization": {
+        "verified_level": 1,
+        "target_level": 3,
+        "quiz_avg": 97,
+        "verified_days_ago": 19
+      },
+      "Statistics": {
+        "verified_level": 1,
+        "target_level": 3,
+        "quiz_avg": 95,
+        "verified_days_ago": 59
+      }
+    },
+    "at_risk": false
+  },
+  {
+    "id": "STU-1007",
+    "name": "Divya",
+    "branch": "Information Technology",
+    "board": "CBSE",
+    "target_role": "AI/ML Engineer",
+    "readiness_score": 44,
+    "skills": {
+      "Python": {
+        "verified_level": 4,
+        "target_level": 4,
+        "quiz_avg": 86,
+        "verified_days_ago": 37
+      },
+      "Linear Algebra & Calculus": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Machine Learning": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Deep Learning": {
+        "verified_level": 3,
+        "target_level": 3,
+        "quiz_avg": 73,
+        "verified_days_ago": 73
+      },
+      "MLOps & API Deployment": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      }
+    },
+    "at_risk": false
+  },
+  {
+    "id": "STU-1008",
+    "name": "Eashwar",
+    "branch": "Electronics & Comm",
+    "board": "CBSE",
+    "target_role": "Bioinformatics Analyst",
+    "readiness_score": 44,
+    "skills": {
+      "Biology Domain Knowledge": {
+        "verified_level": 3,
+        "target_level": 4,
+        "quiz_avg": 83,
+        "verified_days_ago": 25
+      },
+      "Python": {
+        "verified_level": 3,
+        "target_level": 3,
+        "quiz_avg": 98,
+        "verified_days_ago": 38
+      },
+      "Biopython & Genomic Data": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "SQL": {
+        "verified_level": 0,
+        "target_level": 2,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Next-Gen Sequencing Basics": {
+        "verified_level": 1,
+        "target_level": 3,
+        "quiz_avg": 97,
+        "verified_days_ago": 43
+      }
+    },
+    "at_risk": false
+  },
+  {
+    "id": "STU-1009",
+    "name": "Gokul",
+    "branch": "Biotechnology",
+    "board": "CBSE",
+    "target_role": "Frontend Developer",
+    "readiness_score": 25,
+    "skills": {
+      "HTML/CSS": {
+        "verified_level": 2,
+        "target_level": 4,
+        "quiz_avg": 74,
+        "verified_days_ago": 52
+      },
+      "Git & GitHub": {
+        "verified_level": 0,
+        "target_level": 2,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "JavaScript": {
+        "verified_level": 1,
+        "target_level": 4,
+        "quiz_avg": 89,
+        "verified_days_ago": 46
+      },
+      "Responsive Design & Tailwind": {
+        "verified_level": 1,
+        "target_level": 3,
+        "quiz_avg": 81,
+        "verified_days_ago": 44
+      },
+      "React": {
+        "verified_level": 1,
+        "target_level": 3,
+        "quiz_avg": 98,
+        "verified_days_ago": 77
+      },
+      "Next.js": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      }
+    },
+    "at_risk": false
+  },
+  {
+    "id": "STU-1010",
+    "name": "Harini",
+    "branch": "Mechanical Eng",
+    "board": "State Board",
+    "target_role": "Full Stack Developer",
+    "readiness_score": 37,
+    "skills": {
+      "HTML/CSS": {
+        "verified_level": 1,
+        "target_level": 3,
+        "quiz_avg": 94,
+        "verified_days_ago": 73
+      },
+      "Git & GitHub": {
+        "verified_level": 0,
+        "target_level": 2,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "JavaScript": {
+        "verified_level": 2,
+        "target_level": 3,
+        "quiz_avg": 87,
+        "verified_days_ago": 26
+      },
+      "React": {
+        "verified_level": 3,
+        "target_level": 3,
+        "quiz_avg": 83,
+        "verified_days_ago": 32
+      },
+      "Node.js": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "SQL": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      }
+    },
+    "at_risk": true
+  },
+  {
+    "id": "STU-1011",
+    "name": "Hari",
+    "branch": "Data Science",
+    "board": "CBSE",
+    "target_role": "Data Analyst",
+    "readiness_score": 80,
+    "skills": {
+      "Excel & Spreadsheets": {
+        "verified_level": 2,
+        "target_level": 3,
+        "quiz_avg": 91,
+        "verified_days_ago": 52
+      },
+      "SQL": {
+        "verified_level": 4,
+        "target_level": 4,
+        "quiz_avg": 73,
+        "verified_days_ago": 36
+      },
+      "Python": {
+        "verified_level": 2,
+        "target_level": 3,
+        "quiz_avg": 70,
+        "verified_days_ago": 80
+      },
+      "Pandas": {
+        "verified_level": 3,
+        "target_level": 3,
+        "quiz_avg": 77,
+        "verified_days_ago": 5
+      },
+      "Data Visualization": {
+        "verified_level": 3,
+        "target_level": 3,
+        "quiz_avg": 71,
+        "verified_days_ago": 34
+      },
+      "Statistics": {
+        "verified_level": 1,
+        "target_level": 3,
+        "quiz_avg": 97,
+        "verified_days_ago": 47
+      }
+    },
+    "at_risk": false
+  },
+  {
+    "id": "STU-1012",
+    "name": "Ilan",
+    "branch": "Computer Science",
+    "board": "State Board",
+    "target_role": "AI/ML Engineer",
+    "readiness_score": 72,
+    "skills": {
+      "Python": {
+        "verified_level": 4,
+        "target_level": 4,
+        "quiz_avg": 76,
+        "verified_days_ago": 74
+      },
+      "Linear Algebra & Calculus": {
+        "verified_level": 3,
+        "target_level": 3,
+        "quiz_avg": 88,
+        "verified_days_ago": 65
+      },
+      "Machine Learning": {
+        "verified_level": 2,
+        "target_level": 3,
+        "quiz_avg": 95,
+        "verified_days_ago": 57
+      },
+      "Deep Learning": {
+        "verified_level": 1,
+        "target_level": 3,
+        "quiz_avg": 91,
+        "verified_days_ago": 60
+      },
+      "MLOps & API Deployment": {
+        "verified_level": 2,
+        "target_level": 3,
+        "quiz_avg": 84,
+        "verified_days_ago": 11
+      }
+    },
+    "at_risk": false
+  },
+  {
+    "id": "STU-1013",
+    "name": "Ishwarya",
+    "branch": "Information Technology",
+    "board": "CBSE",
+    "target_role": "Bioinformatics Analyst",
+    "readiness_score": 34,
+    "skills": {
+      "Biology Domain Knowledge": {
+        "verified_level": 0,
+        "target_level": 4,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Python": {
+        "verified_level": 2,
+        "target_level": 3,
+        "quiz_avg": 93,
+        "verified_days_ago": 48
+      },
+      "Biopython & Genomic Data": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "SQL": {
+        "verified_level": 1,
+        "target_level": 2,
+        "quiz_avg": 76,
+        "verified_days_ago": 73
+      },
+      "Next-Gen Sequencing Basics": {
+        "verified_level": 2,
+        "target_level": 3,
+        "quiz_avg": 75,
+        "verified_days_ago": 40
+      }
+    },
+    "at_risk": false
+  },
+  {
+    "id": "STU-1014",
+    "name": "Jeeva",
+    "branch": "Electronics & Comm",
+    "board": "State Board",
+    "target_role": "Frontend Developer",
+    "readiness_score": 5,
+    "skills": {
+      "HTML/CSS": {
+        "verified_level": 0,
+        "target_level": 4,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Git & GitHub": {
+        "verified_level": 1,
+        "target_level": 2,
+        "quiz_avg": 71,
+        "verified_days_ago": 74
+      },
+      "JavaScript": {
+        "verified_level": 0,
+        "target_level": 4,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Responsive Design & Tailwind": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "React": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Next.js": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      }
+    },
+    "at_risk": true
+  },
+  {
+    "id": "STU-1015",
+    "name": "Kavya",
+    "branch": "Biotechnology",
+    "board": "State Board",
+    "target_role": "Full Stack Developer",
+    "readiness_score": 25,
+    "skills": {
+      "HTML/CSS": {
+        "verified_level": 1,
+        "target_level": 3,
+        "quiz_avg": 97,
+        "verified_days_ago": 56
+      },
+      "Git & GitHub": {
+        "verified_level": 0,
+        "target_level": 2,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "JavaScript": {
+        "verified_level": 1,
+        "target_level": 3,
+        "quiz_avg": 82,
+        "verified_days_ago": 38
+      },
+      "React": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Node.js": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "SQL": {
+        "verified_level": 3,
+        "target_level": 3,
+        "quiz_avg": 93,
+        "verified_days_ago": 76
+      }
+    },
+    "at_risk": true
+  },
+  {
+    "id": "STU-1016",
+    "name": "Keerthi",
+    "branch": "Mechanical Eng",
+    "board": "CBSE",
+    "target_role": "Data Analyst",
+    "readiness_score": 48,
+    "skills": {
+      "Excel & Spreadsheets": {
+        "verified_level": 1,
+        "target_level": 3,
+        "quiz_avg": 79,
+        "verified_days_ago": 32
+      },
+      "SQL": {
+        "verified_level": 0,
+        "target_level": 4,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Python": {
+        "verified_level": 3,
+        "target_level": 3,
+        "quiz_avg": 71,
+        "verified_days_ago": 45
+      },
+      "Pandas": {
+        "verified_level": 3,
+        "target_level": 3,
+        "quiz_avg": 85,
+        "verified_days_ago": 69
+      },
+      "Data Visualization": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Statistics": {
+        "verified_level": 1,
+        "target_level": 3,
+        "quiz_avg": 86,
+        "verified_days_ago": 15
+      }
+    },
+    "at_risk": false
+  },
+  {
+    "id": "STU-1017",
+    "name": "Madhav",
+    "branch": "Data Science",
+    "board": "CBSE",
+    "target_role": "AI/ML Engineer",
+    "readiness_score": 66,
+    "skills": {
+      "Python": {
+        "verified_level": 1,
+        "target_level": 4,
+        "quiz_avg": 91,
+        "verified_days_ago": 35
+      },
+      "Linear Algebra & Calculus": {
+        "verified_level": 3,
+        "target_level": 3,
+        "quiz_avg": 77,
+        "verified_days_ago": 79
+      },
+      "Machine Learning": {
+        "verified_level": 3,
+        "target_level": 3,
+        "quiz_avg": 72,
+        "verified_days_ago": 58
+      },
+      "Deep Learning": {
+        "verified_level": 3,
+        "target_level": 3,
+        "quiz_avg": 86,
+        "verified_days_ago": 45
+      },
+      "MLOps & API Deployment": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      }
+    },
+    "at_risk": false
+  },
+  {
+    "id": "STU-1018",
+    "name": "Manish",
+    "branch": "Computer Science",
+    "board": "State Board",
+    "target_role": "Bioinformatics Analyst",
+    "readiness_score": 41,
+    "skills": {
+      "Biology Domain Knowledge": {
+        "verified_level": 0,
+        "target_level": 4,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Python": {
+        "verified_level": 2,
+        "target_level": 3,
+        "quiz_avg": 74,
+        "verified_days_ago": 43
+      },
+      "Biopython & Genomic Data": {
+        "verified_level": 1,
+        "target_level": 3,
+        "quiz_avg": 70,
+        "verified_days_ago": 63
+      },
+      "SQL": {
+        "verified_level": 1,
+        "target_level": 2,
+        "quiz_avg": 72,
+        "verified_days_ago": 73
+      },
+      "Next-Gen Sequencing Basics": {
+        "verified_level": 2,
+        "target_level": 3,
+        "quiz_avg": 74,
+        "verified_days_ago": 49
+      }
+    },
+    "at_risk": false
+  },
+  {
+    "id": "STU-1019",
+    "name": "Meena",
+    "branch": "Information Technology",
+    "board": "CBSE",
+    "target_role": "Frontend Developer",
+    "readiness_score": 36,
+    "skills": {
+      "HTML/CSS": {
+        "verified_level": 0,
+        "target_level": 4,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Git & GitHub": {
+        "verified_level": 1,
+        "target_level": 2,
+        "quiz_avg": 84,
+        "verified_days_ago": 74
+      },
+      "JavaScript": {
+        "verified_level": 0,
+        "target_level": 4,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Responsive Design & Tailwind": {
+        "verified_level": 3,
+        "target_level": 3,
+        "quiz_avg": 86,
+        "verified_days_ago": 6
+      },
+      "React": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Next.js": {
+        "verified_level": 3,
+        "target_level": 3,
+        "quiz_avg": 73,
+        "verified_days_ago": 22
+      }
+    },
+    "at_risk": false
+  },
+  {
+    "id": "STU-1020",
+    "name": "Manoj",
+    "branch": "Electronics & Comm",
+    "board": "State Board",
+    "target_role": "Full Stack Developer",
+    "readiness_score": 33,
+    "skills": {
+      "HTML/CSS": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Git & GitHub": {
+        "verified_level": 0,
+        "target_level": 2,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "JavaScript": {
+        "verified_level": 2,
+        "target_level": 3,
+        "quiz_avg": 89,
+        "verified_days_ago": 31
+      },
+      "React": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Node.js": {
+        "verified_level": 3,
+        "target_level": 3,
+        "quiz_avg": 97,
+        "verified_days_ago": 38
+      },
+      "SQL": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      }
+    },
+    "at_risk": true
+  },
+  {
+    "id": "STU-1021",
+    "name": "Naveen",
+    "branch": "Biotechnology",
+    "board": "State Board",
+    "target_role": "Data Analyst",
+    "readiness_score": 48,
+    "skills": {
+      "Excel & Spreadsheets": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "SQL": {
+        "verified_level": 4,
+        "target_level": 4,
+        "quiz_avg": 96,
+        "verified_days_ago": 40
+      },
+      "Python": {
+        "verified_level": 2,
+        "target_level": 3,
+        "quiz_avg": 94,
+        "verified_days_ago": 21
+      },
+      "Pandas": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Data Visualization": {
+        "verified_level": 3,
+        "target_level": 3,
+        "quiz_avg": 84,
+        "verified_days_ago": 75
+      },
+      "Statistics": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      }
+    },
+    "at_risk": false
+  },
+  {
+    "id": "STU-1022",
+    "name": "Nisha",
+    "branch": "Mechanical Eng",
+    "board": "CBSE",
+    "target_role": "AI/ML Engineer",
+    "readiness_score": 33,
+    "skills": {
+      "Python": {
+        "verified_level": 2,
+        "target_level": 4,
+        "quiz_avg": 87,
+        "verified_days_ago": 9
+      },
+      "Linear Algebra & Calculus": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Machine Learning": {
+        "verified_level": 1,
+        "target_level": 3,
+        "quiz_avg": 83,
+        "verified_days_ago": 21
+      },
+      "Deep Learning": {
+        "verified_level": 2,
+        "target_level": 3,
+        "quiz_avg": 98,
+        "verified_days_ago": 10
+      },
+      "MLOps & API Deployment": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      }
+    },
+    "at_risk": false
+  },
+  {
+    "id": "STU-1023",
+    "name": "Pavithra",
+    "branch": "Data Science",
+    "board": "State Board",
+    "target_role": "Bioinformatics Analyst",
+    "readiness_score": 33,
+    "skills": {
+      "Biology Domain Knowledge": {
+        "verified_level": 1,
+        "target_level": 4,
+        "quiz_avg": 81,
+        "verified_days_ago": 76
+      },
+      "Python": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Biopython & Genomic Data": {
+        "verified_level": 3,
+        "target_level": 3,
+        "quiz_avg": 93,
+        "verified_days_ago": 24
+      },
+      "SQL": {
+        "verified_level": 0,
+        "target_level": 2,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Next-Gen Sequencing Basics": {
+        "verified_level": 1,
+        "target_level": 3,
+        "quiz_avg": 95,
+        "verified_days_ago": 27
+      }
+    },
+    "at_risk": true
+  },
+  {
+    "id": "STU-1024",
+    "name": "Pranav",
+    "branch": "Computer Science",
+    "board": "CBSE",
+    "target_role": "Frontend Developer",
+    "readiness_score": 32,
+    "skills": {
+      "HTML/CSS": {
+        "verified_level": 3,
+        "target_level": 4,
+        "quiz_avg": 95,
+        "verified_days_ago": 57
+      },
+      "Git & GitHub": {
+        "verified_level": 0,
+        "target_level": 2,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "JavaScript": {
+        "verified_level": 0,
+        "target_level": 4,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Responsive Design & Tailwind": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "React": {
+        "verified_level": 3,
+        "target_level": 3,
+        "quiz_avg": 73,
+        "verified_days_ago": 53
+      },
+      "Next.js": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      }
+    },
+    "at_risk": false
+  },
+  {
+    "id": "STU-1025",
+    "name": "Pooja",
+    "branch": "Information Technology",
+    "board": "CBSE",
+    "target_role": "Full Stack Developer",
+    "readiness_score": 53,
+    "skills": {
+      "HTML/CSS": {
+        "verified_level": 2,
+        "target_level": 3,
+        "quiz_avg": 81,
+        "verified_days_ago": 44
+      },
+      "Git & GitHub": {
+        "verified_level": 0,
+        "target_level": 2,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "JavaScript": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "React": {
+        "verified_level": 3,
+        "target_level": 3,
+        "quiz_avg": 76,
+        "verified_days_ago": 56
+      },
+      "Node.js": {
+        "verified_level": 1,
+        "target_level": 3,
+        "quiz_avg": 94,
+        "verified_days_ago": 40
+      },
+      "SQL": {
+        "verified_level": 3,
+        "target_level": 3,
+        "quiz_avg": 82,
+        "verified_days_ago": 73
+      }
+    },
+    "at_risk": false
+  },
+  {
+    "id": "STU-1026",
+    "name": "Raghav",
+    "branch": "Electronics & Comm",
+    "board": "State Board",
+    "target_role": "Data Analyst",
+    "readiness_score": 51,
+    "skills": {
+      "Excel & Spreadsheets": {
+        "verified_level": 2,
+        "target_level": 3,
+        "quiz_avg": 75,
+        "verified_days_ago": 79
+      },
+      "SQL": {
+        "verified_level": 0,
+        "target_level": 4,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Python": {
+        "verified_level": 1,
+        "target_level": 3,
+        "quiz_avg": 89,
+        "verified_days_ago": 60
+      },
+      "Pandas": {
+        "verified_level": 2,
+        "target_level": 3,
+        "quiz_avg": 83,
+        "verified_days_ago": 70
+      },
+      "Data Visualization": {
+        "verified_level": 3,
+        "target_level": 3,
+        "quiz_avg": 76,
+        "verified_days_ago": 37
+      },
+      "Statistics": {
+        "verified_level": 2,
+        "target_level": 3,
+        "quiz_avg": 70,
+        "verified_days_ago": 71
+      }
+    },
+    "at_risk": false
+  },
+  {
+    "id": "STU-1027",
+    "name": "Rahul",
+    "branch": "Biotechnology",
+    "board": "ICSE / Other",
+    "target_role": "AI/ML Engineer",
+    "readiness_score": 5,
+    "skills": {
+      "Python": {
+        "verified_level": 0,
+        "target_level": 4,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Linear Algebra & Calculus": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Machine Learning": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Deep Learning": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "MLOps & API Deployment": {
+        "verified_level": 1,
+        "target_level": 3,
+        "quiz_avg": 91,
+        "verified_days_ago": 47
+      }
+    },
+    "at_risk": false
+  },
+  {
+    "id": "STU-1028",
+    "name": "Ramya",
+    "branch": "Mechanical Eng",
+    "board": "CBSE",
+    "target_role": "Bioinformatics Analyst",
+    "readiness_score": 48,
+    "skills": {
+      "Biology Domain Knowledge": {
+        "verified_level": 0,
+        "target_level": 4,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Python": {
+        "verified_level": 2,
+        "target_level": 3,
+        "quiz_avg": 86,
+        "verified_days_ago": 44
+      },
+      "Biopython & Genomic Data": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "SQL": {
+        "verified_level": 2,
+        "target_level": 2,
+        "quiz_avg": 87,
+        "verified_days_ago": 21
+      },
+      "Next-Gen Sequencing Basics": {
+        "verified_level": 3,
+        "target_level": 3,
+        "quiz_avg": 82,
+        "verified_days_ago": 27
+      }
+    },
+    "at_risk": false
+  },
+  {
+    "id": "STU-1029",
+    "name": "Revathi",
+    "branch": "Data Science",
+    "board": "CBSE",
+    "target_role": "Frontend Developer",
+    "readiness_score": 67,
+    "skills": {
+      "HTML/CSS": {
+        "verified_level": 1,
+        "target_level": 4,
+        "quiz_avg": 79,
+        "verified_days_ago": 41
+      },
+      "Git & GitHub": {
+        "verified_level": 2,
+        "target_level": 2,
+        "quiz_avg": 84,
+        "verified_days_ago": 61
+      },
+      "JavaScript": {
+        "verified_level": 2,
+        "target_level": 4,
+        "quiz_avg": 86,
+        "verified_days_ago": 65
+      },
+      "Responsive Design & Tailwind": {
+        "verified_level": 3,
+        "target_level": 3,
+        "quiz_avg": 75,
+        "verified_days_ago": 15
+      },
+      "React": {
+        "verified_level": 3,
+        "target_level": 3,
+        "quiz_avg": 90,
+        "verified_days_ago": 47
+      },
+      "Next.js": {
+        "verified_level": 1,
+        "target_level": 3,
+        "quiz_avg": 91,
+        "verified_days_ago": 44
+      }
+    },
+    "at_risk": false
+  },
+  {
+    "id": "STU-1030",
+    "name": "Rithanya",
+    "branch": "Computer Science",
+    "board": "State Board",
+    "target_role": "Full Stack Developer",
+    "readiness_score": 37,
+    "skills": {
+      "HTML/CSS": {
+        "verified_level": 1,
+        "target_level": 3,
+        "quiz_avg": 71,
+        "verified_days_ago": 36
+      },
+      "Git & GitHub": {
+        "verified_level": 0,
+        "target_level": 2,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "JavaScript": {
+        "verified_level": 1,
+        "target_level": 3,
+        "quiz_avg": 84,
+        "verified_days_ago": 58
+      },
+      "React": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Node.js": {
+        "verified_level": 3,
+        "target_level": 3,
+        "quiz_avg": 92,
+        "verified_days_ago": 54
+      },
+      "SQL": {
+        "verified_level": 1,
+        "target_level": 3,
+        "quiz_avg": 74,
+        "verified_days_ago": 5
+      }
+    },
+    "at_risk": true
+  },
+  {
+    "id": "STU-1031",
+    "name": "Sanjay",
+    "branch": "Information Technology",
+    "board": "CBSE",
+    "target_role": "Data Analyst",
+    "readiness_score": 35,
+    "skills": {
+      "Excel & Spreadsheets": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "SQL": {
+        "verified_level": 0,
+        "target_level": 4,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Python": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Pandas": {
+        "verified_level": 3,
+        "target_level": 3,
+        "quiz_avg": 86,
+        "verified_days_ago": 64
+      },
+      "Data Visualization": {
+        "verified_level": 1,
+        "target_level": 3,
+        "quiz_avg": 97,
+        "verified_days_ago": 20
+      },
+      "Statistics": {
+        "verified_level": 2,
+        "target_level": 3,
+        "quiz_avg": 91,
+        "verified_days_ago": 72
+      }
+    },
+    "at_risk": false
+  },
+  {
+    "id": "STU-1032",
+    "name": "Saravanan",
+    "branch": "Electronics & Comm",
+    "board": "ICSE / Other",
+    "target_role": "AI/ML Engineer",
+    "readiness_score": 0,
+    "skills": {
+      "Python": {
+        "verified_level": 0,
+        "target_level": 4,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Linear Algebra & Calculus": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Machine Learning": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Deep Learning": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "MLOps & API Deployment": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      }
+    },
+    "at_risk": false
+  },
+  {
+    "id": "STU-1033",
+    "name": "Sathish",
+    "branch": "Biotechnology",
+    "board": "State Board",
+    "target_role": "Bioinformatics Analyst",
+    "readiness_score": 11,
+    "skills": {
+      "Biology Domain Knowledge": {
+        "verified_level": 0,
+        "target_level": 4,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Python": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Biopython & Genomic Data": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "SQL": {
+        "verified_level": 0,
+        "target_level": 2,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Next-Gen Sequencing Basics": {
+        "verified_level": 2,
+        "target_level": 3,
+        "quiz_avg": 94,
+        "verified_days_ago": 36
+      }
+    },
+    "at_risk": true
+  },
+  {
+    "id": "STU-1034",
+    "name": "Shalini",
+    "branch": "Mechanical Eng",
+    "board": "CBSE",
+    "target_role": "Frontend Developer",
+    "readiness_score": 42,
+    "skills": {
+      "HTML/CSS": {
+        "verified_level": 4,
+        "target_level": 4,
+        "quiz_avg": 90,
+        "verified_days_ago": 35
+      },
+      "Git & GitHub": {
+        "verified_level": 1,
+        "target_level": 2,
+        "quiz_avg": 92,
+        "verified_days_ago": 41
+      },
+      "JavaScript": {
+        "verified_level": 3,
+        "target_level": 4,
+        "quiz_avg": 80,
+        "verified_days_ago": 74
+      },
+      "Responsive Design & Tailwind": {
+        "verified_level": 1,
+        "target_level": 3,
+        "quiz_avg": 77,
+        "verified_days_ago": 54
+      },
+      "React": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Next.js": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      }
+    },
+    "at_risk": false
+  },
+  {
+    "id": "STU-1035",
+    "name": "Sharanya",
+    "branch": "Data Science",
+    "board": "State Board",
+    "target_role": "Full Stack Developer",
+    "readiness_score": 59,
+    "skills": {
+      "HTML/CSS": {
+        "verified_level": 3,
+        "target_level": 3,
+        "quiz_avg": 84,
+        "verified_days_ago": 58
+      },
+      "Git & GitHub": {
+        "verified_level": 2,
+        "target_level": 2,
+        "quiz_avg": 82,
+        "verified_days_ago": 79
+      },
+      "JavaScript": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "React": {
+        "verified_level": 3,
+        "target_level": 3,
+        "quiz_avg": 82,
+        "verified_days_ago": 66
+      },
+      "Node.js": {
+        "verified_level": 2,
+        "target_level": 3,
+        "quiz_avg": 79,
+        "verified_days_ago": 54
+      },
+      "SQL": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      }
+    },
+    "at_risk": false
+  },
+  {
+    "id": "STU-1036",
+    "name": "Siddharth",
+    "branch": "Computer Science",
+    "board": "ICSE / Other",
+    "target_role": "Data Analyst",
+    "readiness_score": 33,
+    "skills": {
+      "Excel & Spreadsheets": {
+        "verified_level": 3,
+        "target_level": 3,
+        "quiz_avg": 93,
+        "verified_days_ago": 74
+      },
+      "SQL": {
+        "verified_level": 0,
+        "target_level": 4,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Python": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Pandas": {
+        "verified_level": 2,
+        "target_level": 3,
+        "quiz_avg": 83,
+        "verified_days_ago": 67
+      },
+      "Data Visualization": {
+        "verified_level": 2,
+        "target_level": 3,
+        "quiz_avg": 91,
+        "verified_days_ago": 56
+      },
+      "Statistics": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      }
+    },
+    "at_risk": false
+  },
+  {
+    "id": "STU-1037",
+    "name": "Sindhu",
+    "branch": "Information Technology",
+    "board": "CBSE",
+    "target_role": "AI/ML Engineer",
+    "readiness_score": 25,
+    "skills": {
+      "Python": {
+        "verified_level": 0,
+        "target_level": 4,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Linear Algebra & Calculus": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Machine Learning": {
+        "verified_level": 2,
+        "target_level": 3,
+        "quiz_avg": 88,
+        "verified_days_ago": 77
+      },
+      "Deep Learning": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "MLOps & API Deployment": {
+        "verified_level": 2,
+        "target_level": 3,
+        "quiz_avg": 74,
+        "verified_days_ago": 64
+      }
+    },
+    "at_risk": false
+  },
+  {
+    "id": "STU-1038",
+    "name": "Sneha",
+    "branch": "Electronics & Comm",
+    "board": "State Board",
+    "target_role": "Bioinformatics Analyst",
+    "readiness_score": 50,
+    "skills": {
+      "Biology Domain Knowledge": {
+        "verified_level": 3,
+        "target_level": 4,
+        "quiz_avg": 76,
+        "verified_days_ago": 63
+      },
+      "Python": {
+        "verified_level": 2,
+        "target_level": 3,
+        "quiz_avg": 78,
+        "verified_days_ago": 58
+      },
+      "Biopython & Genomic Data": {
+        "verified_level": 1,
+        "target_level": 3,
+        "quiz_avg": 85,
+        "verified_days_ago": 7
+      },
+      "SQL": {
+        "verified_level": 0,
+        "target_level": 2,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Next-Gen Sequencing Basics": {
+        "verified_level": 2,
+        "target_level": 3,
+        "quiz_avg": 77,
+        "verified_days_ago": 13
+      }
+    },
+    "at_risk": false
+  },
+  {
+    "id": "STU-1039",
+    "name": "Sriram",
+    "branch": "Biotechnology",
+    "board": "CBSE",
+    "target_role": "Frontend Developer",
+    "readiness_score": 24,
+    "skills": {
+      "HTML/CSS": {
+        "verified_level": 0,
+        "target_level": 4,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Git & GitHub": {
+        "verified_level": 0,
+        "target_level": 2,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "JavaScript": {
+        "verified_level": 0,
+        "target_level": 4,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Responsive Design & Tailwind": {
+        "verified_level": 1,
+        "target_level": 3,
+        "quiz_avg": 89,
+        "verified_days_ago": 24
+      },
+      "React": {
+        "verified_level": 2,
+        "target_level": 3,
+        "quiz_avg": 91,
+        "verified_days_ago": 19
+      },
+      "Next.js": {
+        "verified_level": 1,
+        "target_level": 3,
+        "quiz_avg": 84,
+        "verified_days_ago": 37
+      }
+    },
+    "at_risk": false
+  },
+  {
+    "id": "STU-1040",
+    "name": "Subash",
+    "branch": "Mechanical Eng",
+    "board": "CBSE",
+    "target_role": "Full Stack Developer",
+    "readiness_score": 75,
+    "skills": {
+      "HTML/CSS": {
+        "verified_level": 3,
+        "target_level": 3,
+        "quiz_avg": 93,
+        "verified_days_ago": 19
+      },
+      "Git & GitHub": {
+        "verified_level": 0,
+        "target_level": 2,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "JavaScript": {
+        "verified_level": 2,
+        "target_level": 3,
+        "quiz_avg": 73,
+        "verified_days_ago": 79
+      },
+      "React": {
+        "verified_level": 2,
+        "target_level": 3,
+        "quiz_avg": 88,
+        "verified_days_ago": 53
+      },
+      "Node.js": {
+        "verified_level": 3,
+        "target_level": 3,
+        "quiz_avg": 76,
+        "verified_days_ago": 14
+      },
+      "SQL": {
+        "verified_level": 3,
+        "target_level": 3,
+        "quiz_avg": 77,
+        "verified_days_ago": 18
+      }
+    },
+    "at_risk": false
+  },
+  {
+    "id": "STU-1041",
+    "name": "Sudhir",
+    "branch": "Data Science",
+    "board": "CBSE",
+    "target_role": "Data Analyst",
+    "readiness_score": 45,
+    "skills": {
+      "Excel & Spreadsheets": {
+        "verified_level": 3,
+        "target_level": 3,
+        "quiz_avg": 89,
+        "verified_days_ago": 20
+      },
+      "SQL": {
+        "verified_level": 1,
+        "target_level": 4,
+        "quiz_avg": 81,
+        "verified_days_ago": 73
+      },
+      "Python": {
+        "verified_level": 2,
+        "target_level": 3,
+        "quiz_avg": 72,
+        "verified_days_ago": 69
+      },
+      "Pandas": {
+        "verified_level": 1,
+        "target_level": 3,
+        "quiz_avg": 97,
+        "verified_days_ago": 58
+      },
+      "Data Visualization": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Statistics": {
+        "verified_level": 2,
+        "target_level": 3,
+        "quiz_avg": 90,
+        "verified_days_ago": 63
+      }
+    },
+    "at_risk": false
+  },
+  {
+    "id": "STU-1042",
+    "name": "Surya",
+    "branch": "Computer Science",
+    "board": "CBSE",
+    "target_role": "AI/ML Engineer",
+    "readiness_score": 66,
+    "skills": {
+      "Python": {
+        "verified_level": 3,
+        "target_level": 4,
+        "quiz_avg": 89,
+        "verified_days_ago": 73
+      },
+      "Linear Algebra & Calculus": {
+        "verified_level": 2,
+        "target_level": 3,
+        "quiz_avg": 83,
+        "verified_days_ago": 80
+      },
+      "Machine Learning": {
+        "verified_level": 1,
+        "target_level": 3,
+        "quiz_avg": 96,
+        "verified_days_ago": 16
+      },
+      "Deep Learning": {
+        "verified_level": 2,
+        "target_level": 3,
+        "quiz_avg": 77,
+        "verified_days_ago": 64
+      },
+      "MLOps & API Deployment": {
+        "verified_level": 3,
+        "target_level": 3,
+        "quiz_avg": 82,
+        "verified_days_ago": 48
+      }
+    },
+    "at_risk": false
+  },
+  {
+    "id": "STU-1043",
+    "name": "Swetha",
+    "branch": "Information Technology",
+    "board": "State Board",
+    "target_role": "Bioinformatics Analyst",
+    "readiness_score": 29,
+    "skills": {
+      "Biology Domain Knowledge": {
+        "verified_level": 0,
+        "target_level": 4,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Python": {
+        "verified_level": 1,
+        "target_level": 3,
+        "quiz_avg": 81,
+        "verified_days_ago": 38
+      },
+      "Biopython & Genomic Data": {
+        "verified_level": 3,
+        "target_level": 3,
+        "quiz_avg": 92,
+        "verified_days_ago": 40
+      },
+      "SQL": {
+        "verified_level": 0,
+        "target_level": 2,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Next-Gen Sequencing Basics": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      }
+    },
+    "at_risk": true
+  },
+  {
+    "id": "STU-1044",
+    "name": "Tamilselvan",
+    "branch": "Electronics & Comm",
+    "board": "State Board",
+    "target_role": "Frontend Developer",
+    "readiness_score": 38,
+    "skills": {
+      "HTML/CSS": {
+        "verified_level": 4,
+        "target_level": 4,
+        "quiz_avg": 85,
+        "verified_days_ago": 76
+      },
+      "Git & GitHub": {
+        "verified_level": 0,
+        "target_level": 2,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "JavaScript": {
+        "verified_level": 0,
+        "target_level": 4,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Responsive Design & Tailwind": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "React": {
+        "verified_level": 1,
+        "target_level": 3,
+        "quiz_avg": 72,
+        "verified_days_ago": 42
+      },
+      "Next.js": {
+        "verified_level": 3,
+        "target_level": 3,
+        "quiz_avg": 77,
+        "verified_days_ago": 44
+      }
+    },
+    "at_risk": true
+  },
+  {
+    "id": "STU-1045",
+    "name": "Tarun",
+    "branch": "Biotechnology",
+    "board": "CBSE",
+    "target_role": "Full Stack Developer",
+    "readiness_score": 72,
+    "skills": {
+      "HTML/CSS": {
+        "verified_level": 3,
+        "target_level": 3,
+        "quiz_avg": 86,
+        "verified_days_ago": 49
+      },
+      "Git & GitHub": {
+        "verified_level": 2,
+        "target_level": 2,
+        "quiz_avg": 81,
+        "verified_days_ago": 63
+      },
+      "JavaScript": {
+        "verified_level": 2,
+        "target_level": 3,
+        "quiz_avg": 77,
+        "verified_days_ago": 20
+      },
+      "React": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Node.js": {
+        "verified_level": 3,
+        "target_level": 3,
+        "quiz_avg": 87,
+        "verified_days_ago": 28
+      },
+      "SQL": {
+        "verified_level": 3,
+        "target_level": 3,
+        "quiz_avg": 85,
+        "verified_days_ago": 40
+      }
+    },
+    "at_risk": false
+  },
+  {
+    "id": "STU-1046",
+    "name": "Thendral",
+    "branch": "Mechanical Eng",
+    "board": "CBSE",
+    "target_role": "Data Analyst",
+    "readiness_score": 53,
+    "skills": {
+      "Excel & Spreadsheets": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "SQL": {
+        "verified_level": 3,
+        "target_level": 4,
+        "quiz_avg": 73,
+        "verified_days_ago": 29
+      },
+      "Python": {
+        "verified_level": 2,
+        "target_level": 3,
+        "quiz_avg": 75,
+        "verified_days_ago": 43
+      },
+      "Pandas": {
+        "verified_level": 3,
+        "target_level": 3,
+        "quiz_avg": 74,
+        "verified_days_ago": 40
+      },
+      "Data Visualization": {
+        "verified_level": 1,
+        "target_level": 3,
+        "quiz_avg": 87,
+        "verified_days_ago": 42
+      },
+      "Statistics": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      }
+    },
+    "at_risk": false
+  },
+  {
+    "id": "STU-1047",
+    "name": "Uma",
+    "branch": "Data Science",
+    "board": "State Board",
+    "target_role": "AI/ML Engineer",
+    "readiness_score": 31,
+    "skills": {
+      "Python": {
+        "verified_level": 0,
+        "target_level": 4,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Linear Algebra & Calculus": {
+        "verified_level": 1,
+        "target_level": 3,
+        "quiz_avg": 88,
+        "verified_days_ago": 41
+      },
+      "Machine Learning": {
+        "verified_level": 2,
+        "target_level": 3,
+        "quiz_avg": 80,
+        "verified_days_ago": 28
+      },
+      "Deep Learning": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "MLOps & API Deployment": {
+        "verified_level": 2,
+        "target_level": 3,
+        "quiz_avg": 73,
+        "verified_days_ago": 13
+      }
+    },
+    "at_risk": true
+  },
+  {
+    "id": "STU-1048",
+    "name": "Vaishnavi",
+    "branch": "Computer Science",
+    "board": "State Board",
+    "target_role": "Bioinformatics Analyst",
+    "readiness_score": 13,
+    "skills": {
+      "Biology Domain Knowledge": {
+        "verified_level": 1,
+        "target_level": 4,
+        "quiz_avg": 74,
+        "verified_days_ago": 24
+      },
+      "Python": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Biopython & Genomic Data": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "SQL": {
+        "verified_level": 1,
+        "target_level": 2,
+        "quiz_avg": 73,
+        "verified_days_ago": 76
+      },
+      "Next-Gen Sequencing Basics": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      }
+    },
+    "at_risk": true
+  },
+  {
+    "id": "STU-1049",
+    "name": "Varun",
+    "branch": "Information Technology",
+    "board": "CBSE",
+    "target_role": "Frontend Developer",
+    "readiness_score": 52,
+    "skills": {
+      "HTML/CSS": {
+        "verified_level": 0,
+        "target_level": 4,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Git & GitHub": {
+        "verified_level": 2,
+        "target_level": 2,
+        "quiz_avg": 84,
+        "verified_days_ago": 61
+      },
+      "JavaScript": {
+        "verified_level": 4,
+        "target_level": 4,
+        "quiz_avg": 79,
+        "verified_days_ago": 77
+      },
+      "Responsive Design & Tailwind": {
+        "verified_level": 3,
+        "target_level": 3,
+        "quiz_avg": 93,
+        "verified_days_ago": 17
+      },
+      "React": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Next.js": {
+        "verified_level": 1,
+        "target_level": 3,
+        "quiz_avg": 78,
+        "verified_days_ago": 15
+      }
+    },
+    "at_risk": false
+  },
+  {
+    "id": "STU-1050",
+    "name": "Vignesh",
+    "branch": "Electronics & Comm",
+    "board": "State Board",
+    "target_role": "Full Stack Developer",
+    "readiness_score": 38,
+    "skills": {
+      "HTML/CSS": {
+        "verified_level": 1,
+        "target_level": 3,
+        "quiz_avg": 75,
+        "verified_days_ago": 5
+      },
+      "Git & GitHub": {
+        "verified_level": 2,
+        "target_level": 2,
+        "quiz_avg": 79,
+        "verified_days_ago": 9
+      },
+      "JavaScript": {
+        "verified_level": 3,
+        "target_level": 3,
+        "quiz_avg": 79,
+        "verified_days_ago": 63
+      },
+      "React": {
+        "verified_level": 1,
+        "target_level": 3,
+        "quiz_avg": 78,
+        "verified_days_ago": 80
+      },
+      "Node.js": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "SQL": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      }
+    },
+    "at_risk": true
+  },
+  {
+    "id": "STU-1051",
+    "name": "Vijay",
+    "branch": "Biotechnology",
+    "board": "State Board",
+    "target_role": "Data Analyst",
+    "readiness_score": 5,
+    "skills": {
+      "Excel & Spreadsheets": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "SQL": {
+        "verified_level": 0,
+        "target_level": 4,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Python": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Pandas": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Data Visualization": {
+        "verified_level": 1,
+        "target_level": 3,
+        "quiz_avg": 95,
+        "verified_days_ago": 44
+      },
+      "Statistics": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      }
+    },
+    "at_risk": true
+  },
+  {
+    "id": "STU-1052",
+    "name": "Vinoth",
+    "branch": "Mechanical Eng",
+    "board": "CBSE",
+    "target_role": "AI/ML Engineer",
+    "readiness_score": 22,
+    "skills": {
+      "Python": {
+        "verified_level": 0,
+        "target_level": 4,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Linear Algebra & Calculus": {
+        "verified_level": 2,
+        "target_level": 3,
+        "quiz_avg": 92,
+        "verified_days_ago": 43
+      },
+      "Machine Learning": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Deep Learning": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "MLOps & API Deployment": {
+        "verified_level": 2,
+        "target_level": 3,
+        "quiz_avg": 84,
+        "verified_days_ago": 15
+      }
+    },
+    "at_risk": false
+  },
+  {
+    "id": "STU-1053",
+    "name": "Vishal",
+    "branch": "Data Science",
+    "board": "CBSE",
+    "target_role": "Bioinformatics Analyst",
+    "readiness_score": 58,
+    "skills": {
+      "Biology Domain Knowledge": {
+        "verified_level": 0,
+        "target_level": 4,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Python": {
+        "verified_level": 3,
+        "target_level": 3,
+        "quiz_avg": 78,
+        "verified_days_ago": 8
+      },
+      "Biopython & Genomic Data": {
+        "verified_level": 3,
+        "target_level": 3,
+        "quiz_avg": 96,
+        "verified_days_ago": 78
+      },
+      "SQL": {
+        "verified_level": 1,
+        "target_level": 2,
+        "quiz_avg": 94,
+        "verified_days_ago": 39
+      },
+      "Next-Gen Sequencing Basics": {
+        "verified_level": 1,
+        "target_level": 3,
+        "quiz_avg": 85,
+        "verified_days_ago": 71
+      }
+    },
+    "at_risk": false
+  },
+  {
+    "id": "STU-1054",
+    "name": "Yalini",
+    "branch": "Computer Science",
+    "board": "CBSE",
+    "target_role": "Frontend Developer",
+    "readiness_score": 38,
+    "skills": {
+      "HTML/CSS": {
+        "verified_level": 0,
+        "target_level": 4,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Git & GitHub": {
+        "verified_level": 2,
+        "target_level": 2,
+        "quiz_avg": 90,
+        "verified_days_ago": 67
+      },
+      "JavaScript": {
+        "verified_level": 0,
+        "target_level": 4,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Responsive Design & Tailwind": {
+        "verified_level": 2,
+        "target_level": 3,
+        "quiz_avg": 80,
+        "verified_days_ago": 46
+      },
+      "React": {
+        "verified_level": 1,
+        "target_level": 3,
+        "quiz_avg": 80,
+        "verified_days_ago": 57
+      },
+      "Next.js": {
+        "verified_level": 2,
+        "target_level": 3,
+        "quiz_avg": 91,
+        "verified_days_ago": 56
+      }
+    },
+    "at_risk": false
+  },
+  {
+    "id": "STU-1055",
+    "name": "Yuvan",
+    "branch": "Information Technology",
+    "board": "CBSE",
+    "target_role": "Full Stack Developer",
+    "readiness_score": 51,
+    "skills": {
+      "HTML/CSS": {
+        "verified_level": 2,
+        "target_level": 3,
+        "quiz_avg": 72,
+        "verified_days_ago": 45
+      },
+      "Git & GitHub": {
+        "verified_level": 1,
+        "target_level": 2,
+        "quiz_avg": 94,
+        "verified_days_ago": 56
+      },
+      "JavaScript": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "React": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Node.js": {
+        "verified_level": 3,
+        "target_level": 3,
+        "quiz_avg": 84,
+        "verified_days_ago": 57
+      },
+      "SQL": {
+        "verified_level": 3,
+        "target_level": 3,
+        "quiz_avg": 81,
+        "verified_days_ago": 68
+      }
+    },
+    "at_risk": false
+  },
+  {
+    "id": "STU-1056",
+    "name": "Abirami",
+    "branch": "Electronics & Comm",
+    "board": "CBSE",
+    "target_role": "Data Analyst",
+    "readiness_score": 21,
+    "skills": {
+      "Excel & Spreadsheets": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "SQL": {
+        "verified_level": 2,
+        "target_level": 4,
+        "quiz_avg": 79,
+        "verified_days_ago": 61
+      },
+      "Python": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Pandas": {
+        "verified_level": 1,
+        "target_level": 3,
+        "quiz_avg": 90,
+        "verified_days_ago": 35
+      },
+      "Data Visualization": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Statistics": {
+        "verified_level": 1,
+        "target_level": 3,
+        "quiz_avg": 87,
+        "verified_days_ago": 57
+      }
+    },
+    "at_risk": false
+  },
+  {
+    "id": "STU-1057",
+    "name": "Balaji",
+    "branch": "Biotechnology",
+    "board": "State Board",
+    "target_role": "AI/ML Engineer",
+    "readiness_score": 29,
+    "skills": {
+      "Python": {
+        "verified_level": 0,
+        "target_level": 4,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Linear Algebra & Calculus": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Machine Learning": {
+        "verified_level": 1,
+        "target_level": 3,
+        "quiz_avg": 90,
+        "verified_days_ago": 24
+      },
+      "Deep Learning": {
+        "verified_level": 3,
+        "target_level": 3,
+        "quiz_avg": 79,
+        "verified_days_ago": 70
+      },
+      "MLOps & API Deployment": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      }
+    },
+    "at_risk": true
+  },
+  {
+    "id": "STU-1058",
+    "name": "Chandran",
+    "branch": "Mechanical Eng",
+    "board": "State Board",
+    "target_role": "Bioinformatics Analyst",
+    "readiness_score": 55,
+    "skills": {
+      "Biology Domain Knowledge": {
+        "verified_level": 4,
+        "target_level": 4,
+        "quiz_avg": 77,
+        "verified_days_ago": 63
+      },
+      "Python": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Biopython & Genomic Data": {
+        "verified_level": 3,
+        "target_level": 3,
+        "quiz_avg": 86,
+        "verified_days_ago": 22
+      },
+      "SQL": {
+        "verified_level": 0,
+        "target_level": 2,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Next-Gen Sequencing Basics": {
+        "verified_level": 2,
+        "target_level": 3,
+        "quiz_avg": 80,
+        "verified_days_ago": 69
+      }
+    },
+    "at_risk": false
+  },
+  {
+    "id": "STU-1059",
+    "name": "Gayathri",
+    "branch": "Data Science",
+    "board": "State Board",
+    "target_role": "Frontend Developer",
+    "readiness_score": 59,
+    "skills": {
+      "HTML/CSS": {
+        "verified_level": 3,
+        "target_level": 4,
+        "quiz_avg": 96,
+        "verified_days_ago": 80
+      },
+      "Git & GitHub": {
+        "verified_level": 2,
+        "target_level": 2,
+        "quiz_avg": 97,
+        "verified_days_ago": 24
+      },
+      "JavaScript": {
+        "verified_level": 4,
+        "target_level": 4,
+        "quiz_avg": 81,
+        "verified_days_ago": 47
+      },
+      "Responsive Design & Tailwind": {
+        "verified_level": 3,
+        "target_level": 3,
+        "quiz_avg": 82,
+        "verified_days_ago": 63
+      },
+      "React": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      },
+      "Next.js": {
+        "verified_level": 0,
+        "target_level": 3,
+        "quiz_avg": 0,
+        "verified_days_ago": 0
+      }
+    },
+    "at_risk": false
+  }
+]

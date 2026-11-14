@@ -1,0 +1,147 @@
+{
+  "arun": {
+    "name": "Arun Kumar",
+    "avatar": "\ud83c\udfd5\ufe0f",
+    "background": "State Board (Tamil Medium), Rural Tier-3 College",
+    "branch": "Information Technology",
+    "board": "State Board",
+    "current_comfort": "Beginner - knows basic HTML, anxious about technical interviews",
+    "confidence_level": "Nervous, worries his English and background are handicaps",
+    "weekly_hours": 10,
+    "stress_level": "High (wants to support his family, scared of complex coding jargon)",
+    "target_role": "Full Stack Developer",
+    "learner_type": "Foundation",
+    "self_ratings": {
+      "HTML/CSS": 3,
+      "Git & GitHub": 1,
+      "JavaScript": 1,
+      "React": 1,
+      "Node.js": 1,
+      "SQL": 1
+    },
+    "verified_skills": {
+      "HTML/CSS": {
+        "level": 2,
+        "verified_date": "2026-10-15",
+        "quiz_score": 85,
+        "viva_score": 80,
+        "project_url": "https://github.com/arun-dev/state-board-notes-portal",
+        "attempts": 1,
+        "time_taken_days": 6
+      }
+    },
+    "failed_attempts": [
+      {
+        "skill": "JavaScript",
+        "attempt_date": "2026-10-22",
+        "quiz_score": 42,
+        "feedback": "Needs revision on asynchronous event loop and callback functions. Curator suggested lightweight practice exercises."
+      }
+    ],
+    "mentor_notes": "Warm encouragement, Tanglish explanations enabled, step-by-step small wins. Emphasize that language is just communication, logic is what matters.",
+    "pressure_free_mode": true
+  },
+  "meena": {
+    "name": "Meena Sundaram",
+    "avatar": "\ud83e\uddec",
+    "background": "B.Tech Biotechnology, Top State University",
+    "branch": "Biotechnology",
+    "board": "CBSE",
+    "current_comfort": "Comfortable with lab biology and molecular genetics; very basic Python only",
+    "confidence_level": "Curious but hesitant if non-CS engineers can succeed in tech",
+    "weekly_hours": 15,
+    "stress_level": "Medium (wants to transition into computational genomics without repeating 4 years)",
+    "target_role": "Bioinformatics Analyst",
+    "learner_type": "Bridge",
+    "self_ratings": {
+      "Biology Domain Knowledge": 5,
+      "Python": 2,
+      "Biopython & Genomic Data": 1,
+      "SQL": 1,
+      "Next-Gen Sequencing Basics": 2
+    },
+    "verified_skills": {
+      "Biology Domain Knowledge": {
+        "level": 4,
+        "verified_date": "2026-09-20",
+        "quiz_score": 96,
+        "viva_score": 94,
+        "project_url": "https://github.com/meena-bio/crispr-target-pathway-audit",
+        "attempts": 1,
+        "time_taken_days": 4
+      },
+      "Python": {
+        "level": 2,
+        "verified_date": "2026-10-05",
+        "quiz_score": 78,
+        "viva_score": 75,
+        "project_url": "https://github.com/meena-bio/dna-fasta-gc-calculator",
+        "attempts": 1,
+        "time_taken_days": 8
+      }
+    },
+    "failed_attempts": [],
+    "mentor_notes": "Bridge Path activated: Explicitly celebrate biology domain depth. Show that software engineers lack biology context, so her domain + Python makes her an elite niche candidate.",
+    "pressure_free_mode": false
+  },
+  "karthik": {
+    "name": "Karthik Raja",
+    "avatar": "\u26a1",
+    "background": "Computer Science, Tier-2 Engineering College",
+    "branch": "Computer Science & Engineering",
+    "board": "CBSE",
+    "current_comfort": "Strong in C and Python DSA, but burned out by peer pressure and competitive coding",
+    "confidence_level": "High technical ability, but emotionally exhausted and cynical about certificates",
+    "weekly_hours": 20,
+    "stress_level": "High (Burnout risk from 100+ LeetCode expectations, lacks modern web framework practical skills)",
+    "target_role": "Full Stack Developer",
+    "learner_type": "Pressure-relief",
+    "self_ratings": {
+      "HTML/CSS": 3,
+      "Git & GitHub": 4,
+      "JavaScript": 2,
+      "React": 1,
+      "Node.js": 1,
+      "SQL": 4
+    },
+    "verified_skills": {
+      "SQL": {
+        "level": 3,
+        "verified_date": "2026-09-10",
+        "quiz_score": 92,
+        "viva_score": 90,
+        "project_url": "https://github.com/karthik-r/campus-placement-db-optimizer",
+        "attempts": 1,
+        "time_taken_days": 3
+      },
+      "Git & GitHub": {
+        "level": 3,
+        "verified_date": "2026-09-18",
+        "quiz_score": 95,
+        "viva_score": 88,
+        "project_url": "https://github.com/karthik-r/dotfiles-developer-setup",
+        "attempts": 1,
+        "time_taken_days": 2
+      },
+      "HTML/CSS": {
+        "level": 2,
+        "verified_date": "2026-10-02",
+        "quiz_score": 82,
+        "viva_score": 78,
+        "project_url": "https://github.com/karthik-r/minimalist-dev-portfolio",
+        "attempts": 1,
+        "time_taken_days": 4
+      }
+    },
+    "failed_attempts": [
+      {
+        "skill": "React",
+        "attempt_date": "2026-10-25",
+        "quiz_score": 45,
+        "feedback": "Tripped up on useEffect dependency arrays and state closures. Mentor intervened to remove streak penalties and provide focused debugging drills."
+      }
+    ],
+    "mentor_notes": "Pressure-Relief mode: No streaks, no countdown clocks, zero competitive leaderboards. Focus on high-autonomy project building where he has creative ownership.",
+    "pressure_free_mode": true
+  }
+}

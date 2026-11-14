@@ -1,0 +1,702 @@
+{
+  "HTML/CSS": {
+    "description": "Structure web documents semantically and style with Flexbox and CSS Grid.",
+    "weekly_quest": "Build a responsive profile card and host it on GitHub Pages.",
+    "mini_project": {
+      "title": "Semantic Mountain Rescue Landing Page",
+      "prompt": "Create a fully responsive landing page using semantic HTML5 tags (<header>, <main>, <section>, <footer>) and Flexbox/CSS Grid. Include a contact form and mobile navigation.",
+      "deliverable": "GitHub repo URL with index.html, styles.css, and live demo link."
+    },
+    "items": [
+      {
+        "type": "video",
+        "title": "HTML & CSS Full Course - Beginner to Pro",
+        "platform": "freeCodeCamp",
+        "url": "https://www.youtube.com/watch?v=G3e-cpL7ofc",
+        "hours": 6,
+        "difficulty": "Beginner"
+      },
+      {
+        "type": "tutorial",
+        "title": "MDN Learn Web Development: Getting Started with the Web",
+        "platform": "MDN Web Docs",
+        "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development",
+        "hours": 4,
+        "difficulty": "Beginner"
+      },
+      {
+        "type": "practice",
+        "title": "CSS Flexbox Froggy & Grid Garden Interactive Exercises",
+        "platform": "Codepip",
+        "url": "https://flexboxfroggy.com/",
+        "hours": 2,
+        "difficulty": "Beginner"
+      }
+    ]
+  },
+  "Git & GitHub": {
+    "description": "Version control essentials, commit hygiene, branches, pull requests, and collaborative workflows.",
+    "weekly_quest": "Fork an open repository, create a branch, submit a mock Pull Request.",
+    "mini_project": {
+      "title": "Documented Open-Source Starter Kit",
+      "prompt": "Create a repository with a clean README.md, LICENSE, .gitignore, and a multi-commit history showcasing feature branches merged via PRs.",
+      "deliverable": "GitHub repository URL with clear commit log and Markdown README."
+    },
+    "items": [
+      {
+        "type": "video",
+        "title": "Git and GitHub for Beginners - Crash Course",
+        "platform": "freeCodeCamp",
+        "url": "https://www.youtube.com/watch?v=RGOj5yH7evk",
+        "hours": 2,
+        "difficulty": "Beginner"
+      },
+      {
+        "type": "tutorial",
+        "title": "GitHub Skills: Introduction to GitHub Interactive Lab",
+        "platform": "GitHub Skills",
+        "url": "https://skills.github.com/",
+        "hours": 2,
+        "difficulty": "Beginner"
+      },
+      {
+        "type": "practice",
+        "title": "Learn Git Branching - Visual Sandbox",
+        "platform": "LearnGitBranching",
+        "url": "https://learngitbranching.js.org/",
+        "hours": 3,
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+  "JavaScript": {
+    "description": "Modern ES6+ syntax, asynchronous programming (Promises/async-await), closures, DOM manipulation.",
+    "weekly_quest": "Write an async API fetcher that handles loading states, timeouts, and network errors.",
+    "mini_project": {
+      "title": "Interactive Weather & Habit Dashboard",
+      "prompt": "Build a client-side JavaScript app that queries a public REST API, renders dynamic DOM elements, filters by keyword, and stores user habits in localStorage.",
+      "deliverable": "GitHub repository with app.js demonstrating async/await and array methods (.map, .filter, .reduce)."
+    },
+    "items": [
+      {
+        "type": "video",
+        "title": "JavaScript Programming - Full Course",
+        "platform": "freeCodeCamp",
+        "url": "https://www.youtube.com/watch?v=jS4aFq5-91M",
+        "hours": 8,
+        "difficulty": "Beginner-Intermediate"
+      },
+      {
+        "type": "tutorial",
+        "title": "The Modern JavaScript Tutorial (javascript.info)",
+        "platform": "JavaScript.info",
+        "url": "https://javascript.info/",
+        "hours": 6,
+        "difficulty": "Intermediate"
+      },
+      {
+        "type": "practice",
+        "title": "Exercism JavaScript Track - 5 Core Katas",
+        "platform": "Exercism",
+        "url": "https://exercism.org/tracks/javascript",
+        "hours": 4,
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+  "React": {
+    "description": "Functional components, custom hooks, useState/useEffect lifecycle, props, state lifting, Context API.",
+    "weekly_quest": "Create a reusable searchable list component with debounced search input.",
+    "mini_project": {
+      "title": "SkillSherpa Expedition Gear Checklist",
+      "prompt": "Build a React component hierarchy for managing checklist items with category filters, checked status, local persistence, and summary metrics.",
+      "deliverable": "GitHub repo link containing Vite/React code with at least 3 custom components and clean hook state."
+    },
+    "items": [
+      {
+        "type": "video",
+        "title": "React Course 2024 - Beginner to Advanced",
+        "platform": "freeCodeCamp",
+        "url": "https://www.youtube.com/watch?v=bMknfKXIFA8",
+        "hours": 10,
+        "difficulty": "Intermediate"
+      },
+      {
+        "type": "tutorial",
+        "title": "Thinking in React & Quick Start",
+        "platform": "React Docs Official",
+        "url": "https://react.dev/learn",
+        "hours": 5,
+        "difficulty": "Intermediate"
+      },
+      {
+        "type": "practice",
+        "title": "Scrimba - Interactive React Bootcamp Modules",
+        "platform": "Scrimba",
+        "url": "https://scrimba.com/learn/learnreact",
+        "hours": 5,
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+  "Node.js": {
+    "description": "RESTful API creation with Express, middleware, JSON error handling, environment variables, JWT basics.",
+    "weekly_quest": "Build a CRUD REST API with Express and automated request validation.",
+    "mini_project": {
+      "title": "Mountain Trail Tracker REST API",
+      "prompt": "Construct an Express backend providing GET, POST, PUT, DELETE routes for trail checkpoints with validation middleware, status code handling, and mock DB persistence.",
+      "deliverable": "GitHub repository with server.js, route tests, and a Postman/curl sample collection in README."
+    },
+    "items": [
+      {
+        "type": "video",
+        "title": "Node.js and Express.js - Full Course",
+        "platform": "freeCodeCamp",
+        "url": "https://www.youtube.com/watch?v=Oe421EPjeBE",
+        "hours": 8,
+        "difficulty": "Intermediate"
+      },
+      {
+        "type": "tutorial",
+        "title": "MDN Express Tutorial: The Local Library website",
+        "platform": "MDN Web Docs",
+        "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs",
+        "hours": 6,
+        "difficulty": "Intermediate"
+      },
+      {
+        "type": "practice",
+        "title": "NodeSchool - Workshopper CLI LearnYouNode",
+        "platform": "NodeSchool",
+        "url": "https://nodeschool.io/",
+        "hours": 3,
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+  "SQL": {
+    "description": "Relational schema design, normalization, multi-table JOINs, GROUP BY aggregations, window functions.",
+    "weekly_quest": "Write a 3-table JOIN query with aggregate grouping and subquery filtering.",
+    "mini_project": {
+      "title": "University Placement Analytics Schema & Query Suite",
+      "prompt": "Design a relational schema (Students, Companies, Interviews, Offers) in SQLite/PostgreSQL with foreign keys, indexes, and write 5 analytical queries reporting conversion rates.",
+      "deliverable": "GitHub repository with schema.sql and analytical_queries.sql."
+    },
+    "items": [
+      {
+        "type": "video",
+        "title": "SQL Tutorial - Full Database Course for Beginners",
+        "platform": "freeCodeCamp",
+        "url": "https://www.youtube.com/watch?v=HXV3zeQKqGY",
+        "hours": 4,
+        "difficulty": "Beginner"
+      },
+      {
+        "type": "tutorial",
+        "title": "SQLBolt - Interactive Lessons and Queries",
+        "platform": "SQLBolt",
+        "url": "https://sqlbolt.com/",
+        "hours": 3,
+        "difficulty": "Beginner"
+      },
+      {
+        "type": "practice",
+        "title": "Kaggle Learn: Intro to SQL & Advanced SQL",
+        "platform": "Kaggle Learn",
+        "url": "https://www.kaggle.com/learn/intro-to-sql",
+        "hours": 4,
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+  "Python": {
+    "description": "Core syntax, data structures (lists, dicts, sets, tuples), OOP, list comprehensions, file I/O, error handling.",
+    "weekly_quest": "Build a CSV log parser that computes frequency distributions and writes JSON summaries.",
+    "mini_project": {
+      "title": "Expedition Log Telemetry Analyzer",
+      "prompt": "Create an object-oriented Python command-line tool that parses flight/sensor telemetry logs, handles corrupt rows gracefully, and prints summary stats.",
+      "deliverable": "GitHub repository with clean modular Python code, unit tests with unittest/pytest."
+    },
+    "items": [
+      {
+        "type": "video",
+        "title": "CS50's Introduction to Programming with Python",
+        "platform": "Harvard CS50 / YouTube",
+        "url": "https://cs50.harvard.edu/python/",
+        "hours": 12,
+        "difficulty": "Beginner"
+      },
+      {
+        "type": "tutorial",
+        "title": "The Official Python Tutorial (docs.python.org)",
+        "platform": "Python Software Foundation",
+        "url": "https://docs.python.org/3/tutorial/",
+        "hours": 6,
+        "difficulty": "Beginner-Intermediate"
+      },
+      {
+        "type": "practice",
+        "title": "Exercism Python Track & Kaggle Python Course",
+        "platform": "Kaggle / Exercism",
+        "url": "https://www.kaggle.com/learn/python",
+        "hours": 4,
+        "difficulty": "Beginner"
+      }
+    ]
+  },
+  "Pandas": {
+    "description": "DataFrames, Series, missing data imputation, groupby, merge/join, pivot tables, time series manipulation.",
+    "weekly_quest": "Clean a messy real-world CSV dataset with missing timestamps and categorical typos.",
+    "mini_project": {
+      "title": "Public Health Cohort Data Wrangling Pipeline",
+      "prompt": "Clean, merge, and transform two tabular datasets. Handle NaN values, parse ISO dates, and export an aggregated pivot table with markdown summary notes.",
+      "deliverable": "GitHub Jupyter notebook or clean Python script using vectorized Pandas methods."
+    },
+    "items": [
+      {
+        "type": "video",
+        "title": "Pandas Full Tutorial for Beginners",
+        "platform": "freeCodeCamp",
+        "url": "https://www.youtube.com/watch?v=vmEHCJofslg",
+        "hours": 5,
+        "difficulty": "Intermediate"
+      },
+      {
+        "type": "tutorial",
+        "title": "Kaggle Learn: Pandas 4-Hour Micro-course",
+        "platform": "Kaggle Learn",
+        "url": "https://www.kaggle.com/learn/pandas",
+        "hours": 4,
+        "difficulty": "Beginner-Intermediate"
+      },
+      {
+        "type": "practice",
+        "title": "100 Pandas Puzzles (Open-Source GitHub Practice)",
+        "platform": "GitHub Community",
+        "url": "https://github.com/ajcr/100-pandas-puzzles",
+        "hours": 3,
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+  "Excel & Spreadsheets": {
+    "description": "Formulas (VLOOKUP, XLOOKUP, INDEX-MATCH), pivot tables, data hygiene, conditional formatting.",
+    "weekly_quest": "Create an automated budget model with dynamic drop-downs and conditional color bands.",
+    "mini_project": {
+      "title": "Camp Supply Operations Financial Model",
+      "prompt": "Build an Excel/Google Sheets model using XLOOKUP, dynamic SUMIFS, and a multi-scenario pivot dashboard.",
+      "deliverable": "Shared link or exported .xlsx with clean formula audit trail."
+    },
+    "items": [
+      {
+        "type": "video",
+        "title": "Excel for Beginners to Advanced Course",
+        "platform": "freeCodeCamp",
+        "url": "https://www.youtube.com/watch?v=Vl0H-qTclOg",
+        "hours": 4,
+        "difficulty": "Beginner"
+      },
+      {
+        "type": "tutorial",
+        "title": "Microsoft 365 Excel Training Center",
+        "platform": "Microsoft Support",
+        "url": "https://support.microsoft.com/en-us/excel",
+        "hours": 3,
+        "difficulty": "Beginner"
+      },
+      {
+        "type": "practice",
+        "title": "Excel Practice Online Exercises",
+        "platform": "Excel-Practice-Online",
+        "url": "https://www.excel-practice-online.com/",
+        "hours": 2,
+        "difficulty": "Beginner"
+      }
+    ]
+  },
+  "Data Visualization": {
+    "description": "Chart selection taxonomy, Matplotlib, Seaborn, Plotly, color theory, storytelling with dashboards.",
+    "weekly_quest": "Build an interactive multi-faceted scatter plot with Plotly showing correlation insights.",
+    "mini_project": {
+      "title": "Global Climate Anomalies Visual Storyboard",
+      "prompt": "Create 3 publication-ready charts (distribution, correlation, time series trend) using Seaborn/Plotly with proper annotations and accessible color palettes.",
+      "deliverable": "Jupyter notebook on GitHub with annotated figures and executive takeaways."
+    },
+    "items": [
+      {
+        "type": "video",
+        "title": "Data Visualization with Python - Full Course",
+        "platform": "freeCodeCamp",
+        "url": "https://www.youtube.com/watch?v=a9UrKTVEeZA",
+        "hours": 4,
+        "difficulty": "Intermediate"
+      },
+      {
+        "type": "tutorial",
+        "title": "Kaggle Learn: Data Visualization Course",
+        "platform": "Kaggle Learn",
+        "url": "https://www.kaggle.com/learn/data-visualization",
+        "hours": 4,
+        "difficulty": "Intermediate"
+      },
+      {
+        "type": "practice",
+        "title": "From Data to Viz - Interactive Chart Chooser Guide",
+        "platform": "Data to Viz",
+        "url": "https://www.data-to-viz.com/",
+        "hours": 2,
+        "difficulty": "Beginner"
+      }
+    ]
+  },
+  "Statistics": {
+    "description": "Descriptive statistics, hypothesis testing (t-test, chi-square), p-values, distributions, Bayes theorem.",
+    "weekly_quest": "Perform an A/B test analysis on mock conversion rates with confidence interval reporting.",
+    "mini_project": {
+      "title": "A/B Testing Experiment Rigor Report",
+      "prompt": "Analyze a two-variant conversion experiment dataset. Calculate p-value, effect size, statistical power, and draft an executive recommendation.",
+      "deliverable": "GitHub repository with analytical notebook and clear business summary."
+    },
+    "items": [
+      {
+        "type": "video",
+        "title": "Statistics for Data Science - Full Course",
+        "platform": "freeCodeCamp",
+        "url": "https://www.youtube.com/watch?v=xxpc-HPKN28",
+        "hours": 6,
+        "difficulty": "Intermediate"
+      },
+      {
+        "type": "tutorial",
+        "title": "Khan Academy: High School & College Statistics",
+        "platform": "Khan Academy",
+        "url": "https://www.khanacademy.org/math/statistics-probability",
+        "hours": 6,
+        "difficulty": "Beginner-Intermediate"
+      },
+      {
+        "type": "practice",
+        "title": "Seeing Theory: A Visual Introduction to Probability & Stats",
+        "platform": "Brown University",
+        "url": "https://seeing-theory.brown.edu/",
+        "hours": 3,
+        "difficulty": "Beginner"
+      }
+    ]
+  },
+  "Machine Learning": {
+    "description": "Supervised & unsupervised learning, Scikit-Learn, cross-validation, regularization, evaluation metrics (ROC-AUC, F1).",
+    "weekly_quest": "Train and compare a Random Forest vs Logistic Regression model with 5-fold cross validation.",
+    "mini_project": {
+      "title": "Credit Risk Default Predictor with Scikit-Learn",
+      "prompt": "Build an end-to-end ML pipeline with numerical scaling, one-hot encoding, model training, hyperparameter tuning via GridSearchCV, and metric evaluation.",
+      "deliverable": "GitHub repository with pipeline.py and saved model artifact."
+    },
+    "items": [
+      {
+        "type": "video",
+        "title": "Machine Learning for Everybody - Full Course",
+        "platform": "freeCodeCamp",
+        "url": "https://www.youtube.com/watch?v=i_LwzRVP7bg",
+        "hours": 4,
+        "difficulty": "Intermediate"
+      },
+      {
+        "type": "tutorial",
+        "title": "Kaggle Learn: Intro to Machine Learning",
+        "platform": "Kaggle Learn",
+        "url": "https://www.kaggle.com/learn/intro-to-machine-learning",
+        "hours": 4,
+        "difficulty": "Intermediate"
+      },
+      {
+        "type": "practice",
+        "title": "Scikit-Learn Official Tutorials and Examples",
+        "platform": "scikit-learn.org",
+        "url": "https://scikit-learn.org/stable/tutorial/index.html",
+        "hours": 5,
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+  "Deep Learning": {
+    "description": "Neural network architectures, PyTorch tensors, backprop, loss functions, CNNs, transformers basics.",
+    "weekly_quest": "Train a simple CNN classifier on Fashion-MNIST with PyTorch and plot train/val loss curves.",
+    "mini_project": {
+      "title": "PyTorch Vision Classifier for Medical Image Triage",
+      "prompt": "Construct a convolutional neural network or fine-tune a lightweight MobileNet on image data. Implement early stopping, validation checkpointing, and confusion matrix.",
+      "deliverable": "GitHub repo with PyTorch training script, requirements, and test accuracy metrics."
+    },
+    "items": [
+      {
+        "type": "video",
+        "title": "PyTorch for Deep Learning Bootcamp",
+        "platform": "freeCodeCamp",
+        "url": "https://www.youtube.com/watch?v=V_xro1rmAuQ",
+        "hours": 12,
+        "difficulty": "Advanced"
+      },
+      {
+        "type": "tutorial",
+        "title": "Fast.ai Practical Deep Learning for Coders",
+        "platform": "Fast.ai",
+        "url": "https://course.fast.ai/",
+        "hours": 10,
+        "difficulty": "Intermediate"
+      },
+      {
+        "type": "practice",
+        "title": "PyTorch Official 60-Minute Blitz",
+        "platform": "pytorch.org",
+        "url": "https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html",
+        "hours": 4,
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+  "Linear Algebra & Calculus": {
+    "description": "Vectors, matrices, dot products, eigenvalues, partial derivatives, gradient descent math.",
+    "weekly_quest": "Implement gradient descent from scratch in pure NumPy without ML frameworks.",
+    "mini_project": {
+      "title": "Pure NumPy Neural Network Math Engine",
+      "prompt": "Write a 2-layer forward and backward propagation pass using only NumPy matrix multiplications and analytical gradients.",
+      "deliverable": "GitHub Jupyter notebook detailing the mathematical derivations and code."
+    },
+    "items": [
+      {
+        "type": "video",
+        "title": "Essence of Linear Algebra by 3Blue1Brown",
+        "platform": "3Blue1Brown YouTube",
+        "url": "https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab",
+        "hours": 5,
+        "difficulty": "Beginner-Intermediate"
+      },
+      {
+        "type": "tutorial",
+        "title": "Khan Academy: Linear Algebra & Multivariable Calculus",
+        "platform": "Khan Academy",
+        "url": "https://www.khanacademy.org/math/linear-algebra",
+        "hours": 8,
+        "difficulty": "Intermediate"
+      },
+      {
+        "type": "practice",
+        "title": "Immersive Math: Interactive Linear Algebra with 3D Graphics",
+        "platform": "Immersive Math",
+        "url": "http://immersivemath.com/ila/index.html",
+        "hours": 3,
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+  "MLOps & API Deployment": {
+    "description": "FastAPI model serving, Docker containerization, model monitoring, batch vs real-time inference.",
+    "weekly_quest": "Wrap a Scikit-Learn model in a FastAPI endpoint and test with Swagger UI.",
+    "mini_project": {
+      "title": "Containerized ML Inference Microservice",
+      "prompt": "Build a FastAPI REST service exposing a /predict endpoint with Pydantic schema validation and a Dockerfile for reproducible deployment.",
+      "deliverable": "GitHub repo with main.py, Dockerfile, test_api.py, and sample curl commands."
+    },
+    "items": [
+      {
+        "type": "video",
+        "title": "FastAPI Full Course - Python API Development",
+        "platform": "freeCodeCamp",
+        "url": "https://www.youtube.com/watch?v=0sOvCWFmrtA",
+        "hours": 6,
+        "difficulty": "Intermediate"
+      },
+      {
+        "type": "tutorial",
+        "title": "Full Stack MLOps Course",
+        "platform": "Made With ML",
+        "url": "https://madewithml.com/",
+        "hours": 8,
+        "difficulty": "Intermediate"
+      },
+      {
+        "type": "practice",
+        "title": "FastAPI Official Interactive Documentation & Tutorial",
+        "platform": "FastAPI",
+        "url": "https://fastapi.tiangolo.com/tutorial/",
+        "hours": 3,
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+  "Biology Domain Knowledge": {
+    "description": "Central dogma of molecular biology, DNA/RNA sequences, amino acid structures, gene expression.",
+    "weekly_quest": "Draft a pathway diagram connecting transcription, translation, and mutated protein folding.",
+    "mini_project": {
+      "title": "Genetic Mutation Impact Analysis Dossier",
+      "prompt": "Document a case study of a single nucleotide polymorphism (SNP), explaining its effect on codon translation and phenotypic expression.",
+      "deliverable": "Markdown report with citations and amino acid substitution analysis."
+    },
+    "items": [
+      {
+        "type": "video",
+        "title": "DNA, RNA, and Protein Synthesis",
+        "platform": "Khan Academy / YouTube",
+        "url": "https://www.khanacademy.org/science/biology/gene-expression-central-dogma",
+        "hours": 4,
+        "difficulty": "Beginner"
+      },
+      {
+        "type": "tutorial",
+        "title": "Nature Education Scitable: Essentials of Genetics",
+        "platform": "Nature Scitable",
+        "url": "https://www.nature.com/scitable/topic/genetics-5/",
+        "hours": 5,
+        "difficulty": "Beginner"
+      },
+      {
+        "type": "practice",
+        "title": "Learn.Genetics Interactive Tour of the Basics",
+        "platform": "University of Utah",
+        "url": "https://learn.genetics.utah.edu/",
+        "hours": 2,
+        "difficulty": "Beginner"
+      }
+    ]
+  },
+  "Biopython & Genomic Data": {
+    "description": "FASTA/FASTQ parsing, NCBI Entrez queries, pairwise sequence alignment with Bio.Seq, motif finding.",
+    "weekly_quest": "Write a Biopython script to calculate GC content and locate open reading frames (ORFs).",
+    "mini_project": {
+      "title": "Automated Viral Genome Variant Scanner",
+      "prompt": "Write a Python script using Biopython to download a target viral FASTA file from NCBI, identify mutation loci against a reference genome, and output a CSV report.",
+      "deliverable": "GitHub repository with variant_scanner.py and sample output."
+    },
+    "items": [
+      {
+        "type": "video",
+        "title": "Bioinformatics with Python Tutorial Series",
+        "platform": "Data Professor / YouTube",
+        "url": "https://www.youtube.com/watch?v=uNm71wZ_w78",
+        "hours": 4,
+        "difficulty": "Intermediate"
+      },
+      {
+        "type": "tutorial",
+        "title": "Biopython Tutorial and Cookbook",
+        "platform": "Biopython.org",
+        "url": "https://biopython.org/DIST/docs/tutorial/Tutorial.html",
+        "hours": 6,
+        "difficulty": "Intermediate"
+      },
+      {
+        "type": "practice",
+        "title": "Rosalind: Platform for Learning Bioinformatics through Problem Solving",
+        "platform": "Rosalind.info",
+        "url": "https://rosalind.info/problems/locations/",
+        "hours": 5,
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+  "Next-Gen Sequencing Basics": {
+    "description": "Illumina sequencing workflow, read quality control (FastQC), SAM/BAM alignments, variant calling pipelines.",
+    "weekly_quest": "Run a simulated FastQC quality report and interpret Phred score drops.",
+    "mini_project": {
+      "title": "Mini NGS Read Quality Control Pipeline",
+      "prompt": "Construct a bash/python workflow that filters low-quality reads (Phred < 20) from synthetic FASTQ data and generates summary quality plots.",
+      "deliverable": "GitHub repository with qc_pipeline.sh/py and generated quality charts."
+    },
+    "items": [
+      {
+        "type": "video",
+        "title": "Next Generation Sequencing (NGS) - An Introduction",
+        "platform": "EMBL-EBI / YouTube",
+        "url": "https://www.ebi.ac.uk/training/online/courses/human-genetic-variation-introduction/next-generation-sequencing-ngs/",
+        "hours": 3,
+        "difficulty": "Intermediate"
+      },
+      {
+        "type": "tutorial",
+        "title": "Galaxy Project: NGS Quality Control & Mapping Tutorial",
+        "platform": "Galaxy Training Network",
+        "url": "https://training.galaxyproject.org/",
+        "hours": 4,
+        "difficulty": "Intermediate"
+      },
+      {
+        "type": "practice",
+        "title": "Babraham Bioinformatics FastQC Practice Datasets",
+        "platform": "Babraham Institute",
+        "url": "https://www.bioinformatics.babraham.ac.uk/projects/fastqc/",
+        "hours": 2,
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+  "Responsive Design & Tailwind": {
+    "description": "Utility-first CSS, mobile-first breakpoints, flex/grid layouts, component styling with Tailwind CSS.",
+    "weekly_quest": "Recreate a desktop SaaS dashboard view as an adaptive mobile-first layout.",
+    "mini_project": {
+      "title": "High-Converting SaaS Pricing Component",
+      "prompt": "Build a responsive tiered pricing component with monthly/annual billing toggles and feature comparisons using Tailwind CSS classes.",
+      "deliverable": "GitHub repo with HTML/Tailwind demo page hosted on GitHub Pages or Vercel."
+    },
+    "items": [
+      {
+        "type": "video",
+        "title": "Tailwind CSS Full Course for Beginners",
+        "platform": "freeCodeCamp",
+        "url": "https://www.youtube.com/watch?v=ft30zcMlFao",
+        "hours": 4,
+        "difficulty": "Beginner"
+      },
+      {
+        "type": "tutorial",
+        "title": "Tailwind CSS Official Documentation & Core Concepts",
+        "platform": "Tailwind Labs",
+        "url": "https://tailwindcss.com/docs/utility-first",
+        "hours": 3,
+        "difficulty": "Beginner"
+      },
+      {
+        "type": "practice",
+        "title": "Tailwind Play - Interactive Browser Playground",
+        "platform": "Tailwind Labs",
+        "url": "https://play.tailwindcss.com/",
+        "hours": 2,
+        "difficulty": "Beginner"
+      }
+    ]
+  },
+  "Next.js": {
+    "description": "App Router, Server Components vs Client Components, dynamic routing, API route handlers, SEO.",
+    "weekly_quest": "Build a dynamic blog route fetching markdown content via Server Components.",
+    "mini_project": {
+      "title": "Fast SEO-Optimized Product Catalog in Next.js",
+      "prompt": "Create a Next.js 14 App Router application with static generation for product pages, client-side category filtering, and metadata optimization.",
+      "deliverable": "GitHub repo with app router structure and deployment on Vercel."
+    },
+    "items": [
+      {
+        "type": "video",
+        "title": "Next.js 14 Full Course - App Router",
+        "platform": "freeCodeCamp",
+        "url": "https://www.youtube.com/watch?v=wm5gMKuwSYk",
+        "hours": 6,
+        "difficulty": "Intermediate"
+      },
+      {
+        "type": "tutorial",
+        "title": "Learn Next.js - Official Interactive Course",
+        "platform": "Next.js / Vercel",
+        "url": "https://nextjs.org/learn",
+        "hours": 5,
+        "difficulty": "Intermediate"
+      },
+      {
+        "type": "practice",
+        "title": "Vercel Next.js Templates & Starter Walkthroughs",
+        "platform": "Vercel",
+        "url": "https://vercel.com/templates/next.js",
+        "hours": 3,
+        "difficulty": "Intermediate"
+      }
+    ]
+  }
+}

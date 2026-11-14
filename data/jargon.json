@@ -1,0 +1,86 @@
+{
+  "hackathon": {
+    "term": "Hackathon",
+    "category": "Events",
+    "english": "A 24 to 48-hour team marathon where students build a working prototype software or app from scratch and present it to judges.",
+    "tanglish": "Hackathon-na bayapadatheenga! Adhu oru coding festival maadhiri. Oru 24-48 hours-la chinna team-ah serndhu oru useful prototype app pannanum. First-time participate pandradhe periya learning experience!",
+    "tip": "You don't need to be an expert to enter. In fact, most hackathons have special beginner categories and provide free mentors!"
+  },
+  "github": {
+    "term": "GitHub",
+    "category": "Tools",
+    "english": "A cloud platform where programmers store, share, and collaborate on code files using the Git version tracking system.",
+    "tanglish": "Namma Google Drive maadhiri, aana programmers code save panna use panra cloud locker. Yaar eppo enna change pannanga-nu line-by-line track pannum. Recruiter unga profile-ah paarthu nambuvaanga.",
+    "tip": "Having even 2 simple repositories with clean README files beats 10 certificates on your resume."
+  },
+  "open source": {
+    "term": "Open Source",
+    "category": "Culture",
+    "english": "Software whose original source code is made freely available to the public and may be redistributed and modified by anyone.",
+    "tanglish": "Yaru venaalum code-ah eduthu paarkalaam, use pannalaam, improve pannalaam. World-la irukra big tech companies (Google, Meta) kooda open-source projects-ah rely panranga. Neenga chinna typo fix panna kooda contribute pannalaam!",
+    "tip": "Start with 'good first issue' labels to fix documentation or small bugs."
+  },
+  "api": {
+    "term": "API (Application Programming Interface)",
+    "category": "Concepts",
+    "english": "A messenger mechanism that allows two different computer software systems to communicate and exchange data securely.",
+    "tanglish": "Restaurant-la Waiter maadhiri! Neenga (App) menu paathu food order panna, waiter (API) kitchen-ku (Server/Database) poi food eduthu varuvaaru. Two apps pesikka use aagum.",
+    "tip": "When you check live cricket scores or weather on your phone, an API brings that data."
+  },
+  "repository": {
+    "term": "Repository (Repo)",
+    "category": "Tools",
+    "english": "A dedicated digital folder or storage space on Git/GitHub that holds all project files, history, and documentation.",
+    "tanglish": "Oru project-oda official file folder. Idhula unga code, images, explanation documents (README) ellam irukkum.",
+    "tip": "Always include a README.md file in every repository explaining what the project does."
+  },
+  "internship": {
+    "term": "Internship",
+    "category": "Career",
+    "english": "A temporary professional work experience (usually 2 to 6 months) offered by companies to students to gain real-world practical skills.",
+    "tanglish": "College padikkum pothe oru company-la trainee-ah vela paathu real-world project epdi run aagudhu-nu kathukra chance. Neraya internships stipend (salary) tharuvanga.",
+    "tip": "Prioritize internships where you get code reviews over those where you only watch slides."
+  },
+  "ats": {
+    "term": "ATS (Applicant Tracking System)",
+    "category": "Recruitment",
+    "english": "Automated software used by recruiters to scan, filter, and score resumes against job description keywords before a human reads them.",
+    "tanglish": "Companies unga resume-ah aal vechu padikrathukku munnadi, oru computer software scan pannum. Keyword match irundha dhaan interview call varum. Cluttered graphic templates avoid pannanum.",
+    "tip": "Use clean single-column plain text and list specific verified technologies (React, SQL, Python)."
+  },
+  "portfolio": {
+    "term": "Portfolio",
+    "category": "Career",
+    "english": "A curated collection of your best live projects, code repositories, and evidence demonstrating what you can actually build.",
+    "tanglish": "Certificates mattum kaataama, 'Idho naane build panna 3 projects, live link idho, code idho'-nu unga thiramaya prove panra showcase.",
+    "tip": "Three solid working projects with demo links are 10x more persuasive than 20 course completion badges."
+  },
+  "ci/cd": {
+    "term": "CI/CD (Continuous Integration / Continuous Deployment)",
+    "category": "DevOps",
+    "english": "Automated pipeline that tests your code whenever you make changes and automatically deploys healthy code to users.",
+    "tanglish": "Neenga GitHub-la code upload pannavudane, automatic-ah tests run aagi, ella mistakes-um check pannittu, website-la deploy aagura smart pipeline.",
+    "tip": "GitHub Actions is a free and popular way to practice simple CI/CD."
+  },
+  "framework": {
+    "term": "Framework (e.g. React, Express)",
+    "category": "Concepts",
+    "english": "A pre-built structure and library of reusable code tools that speeds up building applications without reinventing the wheel.",
+    "tanglish": "Veedu kattum podhu readymade scaffolding maadhiri! Scratch-la irundhu basic things panna theva illa; standard rules & helpers irukkum, adha vechu fast-ah app build pannalaam.",
+    "tip": "Master the core language (JavaScript or Python) first before jumping straight into a framework."
+  },
+  "pull request": {
+    "term": "Pull Request (PR)",
+    "category": "Tools",
+    "english": "A request made to project maintainers asking them to review and merge your proposed code changes into the main codebase.",
+    "tanglish": "'Naan indha issue-ku solution ezhudhirukken, check pannittu unga main project-oda sethukonga' nu maintainer-kita kekkum polite request.",
+    "tip": "Keep your pull requests small and write a friendly 2-sentence description of what you changed."
+  },
+  "full stack": {
+    "term": "Full Stack",
+    "category": "Career",
+    "english": "Proficiency in both the user-facing visual frontend and the server-database backend of an application.",
+    "tanglish": "Front-end (kannula theriyura screen) and Back-end (pinnaadi odura server, database) rendu side-layum work panna therinja all-rounder.",
+    "tip": "You don't need to know everything at day 1. Start with frontend and slowly connect a simple database."
+  }
+}

@@ -1,0 +1,409 @@
+[
+  {
+    "id": "opp-01",
+    "title": "First Contribution to Docs & Starter Templates",
+    "organization": "Mozilla Open Source Community",
+    "type": "Open Source",
+    "stipend_or_perk": "Community Badge & Review",
+    "location": "Remote",
+    "required_skills": {
+      "Git & GitHub": 1,
+      "HTML/CSS": 1
+    },
+    "beginner_friendly": true,
+    "description": "Beginner-friendly 'good-first-issue' fixing broken links, typos, and formatting in developer guides.",
+    "apply_url": "https://github.com/mdn/content/issues",
+    "why_this": "Matches entry-level Git skills; builds early GitHub contribution history."
+  },
+  {
+    "id": "opp-02",
+    "title": "Tamil Nadu State Student Innovation Hackathon 2025",
+    "organization": "Anna University & IIT Madras Incubator",
+    "type": "Hackathon",
+    "stipend_or_perk": "\u20b91,50,000 Prize Pool + Mentorship",
+    "location": "Chennai / Hybrid",
+    "required_skills": {
+      "HTML/CSS": 2,
+      "Git & GitHub": 2
+    },
+    "beginner_friendly": true,
+    "description": "36-hour hackathon designed specifically for first-time hackers from Tier-2/3 institutions and regional boards.",
+    "apply_url": "https://tnhackathon.example.org",
+    "why_this": "Dedicated beginner track with peer mentors and zero prerequisite experience required."
+  },
+  {
+    "id": "opp-03",
+    "title": "FreeCodeCamp Responsive Web Design Certification",
+    "organization": "freeCodeCamp.org",
+    "type": "Free Certification",
+    "stipend_or_perk": "Verified Digital Credential",
+    "location": "Online / Self-paced",
+    "required_skills": {
+      "HTML/CSS": 2
+    },
+    "beginner_friendly": true,
+    "description": "Complete 5 interactive projects to earn an industry-recognized open-source web design certificate.",
+    "apply_url": "https://www.freecodecamp.org/learn/2022/responsive-web-design/",
+    "why_this": "Pure project-based certification that complements your verified HTML/CSS foundation."
+  },
+  {
+    "id": "opp-04",
+    "title": "Junior Frontend Web Dev Intern",
+    "organization": "FinNest Fintech Labs",
+    "type": "Internship",
+    "stipend_or_perk": "\u20b918,000 / month",
+    "location": "Bengaluru / Hybrid",
+    "required_skills": {
+      "HTML/CSS": 2,
+      "JavaScript": 2,
+      "Git & GitHub": 2
+    },
+    "beginner_friendly": false,
+    "description": "Build responsive banking dashboards and interactive calculation tools alongside senior frontend mentors.",
+    "apply_url": "https://finnest.careers/internships",
+    "why_this": "Direct bridge into modern frontend teams once core JavaScript is verified."
+  },
+  {
+    "id": "opp-05",
+    "title": "Kaggle Micro-Course Contributor: Good First Issue",
+    "organization": "Kaggle Open Community",
+    "type": "Open Source",
+    "stipend_or_perk": "Kaggle Swag + Contributor Tier",
+    "location": "Remote",
+    "required_skills": {
+      "Python": 2
+    },
+    "beginner_friendly": true,
+    "description": "Contribute code snippets and dataset docstrings to community notebooks and open Kaggle micro-courses.",
+    "apply_url": "https://www.kaggle.com/community",
+    "why_this": "Ideal first public contribution for learners with verified Python skills."
+  },
+  {
+    "id": "opp-06",
+    "title": "Full Stack React & Node Developer Intern",
+    "organization": "HyperCart E-Commerce",
+    "type": "Internship",
+    "stipend_or_perk": "\u20b925,000 / month",
+    "location": "Remote",
+    "required_skills": {
+      "React": 3,
+      "Node.js": 3,
+      "JavaScript": 3
+    },
+    "beginner_friendly": false,
+    "description": "Work on customer checkout flows, merchant inventory APIs, and Redis-cached catalog routes.",
+    "apply_url": "https://hypercart.io/jobs",
+    "why_this": "Requires full-stack verification in React and Node.js for production code authoring."
+  },
+  {
+    "id": "opp-07",
+    "title": "Google Summer of Code: Python Scientific Track",
+    "organization": "Python Software Foundation (PSF)",
+    "type": "Scholarship",
+    "stipend_or_perk": "$1,500 - $3,000 Stipend",
+    "location": "Remote",
+    "required_skills": {
+      "Python": 3,
+      "Git & GitHub": 2
+    },
+    "beginner_friendly": false,
+    "description": "Spend 12 weeks contributing full-time to core open-source Python packages with 1:1 senior maintainers.",
+    "apply_url": "https://summerofcode.withgoogle.com/",
+    "why_this": "Prestigious international fellowship proving open-source engineering caliber."
+  },
+  {
+    "id": "opp-08",
+    "title": "Data Analyst Trainee - Healthcare Intelligence",
+    "organization": "Apollo Health Tech",
+    "type": "Job",
+    "stipend_or_perk": "\u20b94.5 - 6.0 LPA",
+    "location": "Chennai / Hyderabad",
+    "required_skills": {
+      "SQL": 3,
+      "Excel & Spreadsheets": 3,
+      "Python": 2
+    },
+    "beginner_friendly": false,
+    "description": "Extract hospital patient flow telemetry, build weekly KPI dashboards, and audit diagnostic test turnaround.",
+    "apply_url": "https://apollohealthtech.in/careers",
+    "why_this": "High demand role matching verified SQL and spreadsheet modeling capabilities."
+  },
+  {
+    "id": "opp-09",
+    "title": "Smart India Hackathon (SIH) Internal Campus Qualifier",
+    "organization": "Ministry of Education / AICTE",
+    "type": "Hackathon",
+    "stipend_or_perk": "National Finalist Qualification",
+    "location": "On-Campus / Nationwide",
+    "required_skills": {
+      "Python": 1,
+      "Git & GitHub": 1
+    },
+    "beginner_friendly": true,
+    "description": "Solve problem statements proposed by government ministries. Perfect entry platform for college teams.",
+    "apply_url": "https://sih.gov.in/",
+    "why_this": "Open to any engineering or science student regardless of prior hackathon experience."
+  },
+  {
+    "id": "opp-10",
+    "title": "Bioinformatics Research Fellow (Genomics Pipeline)",
+    "organization": "Institute of Genomics & Integrative Biology (CSIR-IGIB)",
+    "type": "Internship",
+    "stipend_or_perk": "\u20b920,000 / month + Lab Access",
+    "location": "New Delhi / Remote",
+    "required_skills": {
+      "Biology Domain Knowledge": 3,
+      "Python": 3,
+      "Biopython & Genomic Data": 3
+    },
+    "beginner_friendly": false,
+    "description": "Execute comparative genomics alignment on SARS-CoV-2 / TB clinical isolate sequences.",
+    "apply_url": "https://www.igib.res.in/",
+    "why_this": "Combines life sciences knowledge with computational Biopython proficiency."
+  },
+  {
+    "id": "opp-11",
+    "title": "Beginner First Issue: UI Accessibility Bug Fixes",
+    "organization": "Chakra UI / Free Open Source",
+    "type": "Open Source",
+    "stipend_or_perk": "Maintainer Shoutout & Discord Role",
+    "location": "Remote",
+    "required_skills": {
+      "HTML/CSS": 2,
+      "Git & GitHub": 1
+    },
+    "beginner_friendly": true,
+    "description": "Fix ARIA attributes and contrast color contrast ratios on button and modal components.",
+    "apply_url": "https://github.com/chakra-ui/chakra-ui/issues",
+    "why_this": "Great starting issue that reinforces accessibility and clean HTML semantics."
+  },
+  {
+    "id": "opp-12",
+    "title": "Junior Backend API Developer",
+    "organization": "Zoho Partner Ecosystem",
+    "type": "Job",
+    "stipend_or_perk": "\u20b95.0 - 7.5 LPA",
+    "location": "Chennai / Tenkasi",
+    "required_skills": {
+      "Node.js": 3,
+      "SQL": 3,
+      "JavaScript": 3
+    },
+    "beginner_friendly": false,
+    "description": "Design modular microservices and webhooks for enterprise SaaS CRM integrations.",
+    "apply_url": "https://zoho.com/careers",
+    "why_this": "Strong match for candidates with verified server-side JS and relational database modeling."
+  },
+  {
+    "id": "opp-13",
+    "title": "Kaggle Community Dataset Analysis Sprint",
+    "organization": "Kaggle",
+    "type": "Hackathon",
+    "stipend_or_perk": "$5,000 Community Pool",
+    "location": "Online",
+    "required_skills": {
+      "Pandas": 2,
+      "Data Visualization": 2
+    },
+    "beginner_friendly": true,
+    "description": "Publish a high-clarity exploratory data analysis (EDA) notebook on any public dataset.",
+    "apply_url": "https://www.kaggle.com/competitions",
+    "why_this": "Fast way to earn public notebook upvotes and demonstrate data storytelling."
+  },
+  {
+    "id": "opp-14",
+    "title": "Associate AI Engineer (Computer Vision & Tabular)",
+    "organization": "NeuralSense Analytics",
+    "type": "Job",
+    "stipend_or_perk": "\u20b96.5 - 9.0 LPA",
+    "location": "Bengaluru / Hybrid",
+    "required_skills": {
+      "Python": 3,
+      "Machine Learning": 3,
+      "Deep Learning": 3
+    },
+    "beginner_friendly": false,
+    "description": "Deploy deep learning vision models for automated quality defect inspection in manufacturing plants.",
+    "apply_url": "https://neuralsense.ai/careers",
+    "why_this": "High-impact AI position requiring verified PyTorch and classical ML capabilities."
+  },
+  {
+    "id": "opp-15",
+    "title": "Meta Front-End Developer Professional Certificate Grant",
+    "organization": "Coursera & Meta Social Impact",
+    "type": "Scholarship",
+    "stipend_or_perk": "100% Tuition Waiver ($399 Value)",
+    "location": "Online",
+    "required_skills": {
+      "HTML/CSS": 2,
+      "JavaScript": 2
+    },
+    "beginner_friendly": true,
+    "description": "Need-based full scholarship for underrepresented students completing frontend learning paths.",
+    "apply_url": "https://coursera.org/financial-aid",
+    "why_this": "Validates your verified web foundations with a Meta-sponsored credential."
+  },
+  {
+    "id": "opp-16",
+    "title": "Biotech Data Science Student Fellowship",
+    "organization": "Biocon Academy & DBT India",
+    "type": "Scholarship",
+    "stipend_or_perk": "\u20b950,000 Research Grant",
+    "location": "Bengaluru / Hybrid",
+    "required_skills": {
+      "Biology Domain Knowledge": 3,
+      "Python": 2
+    },
+    "beginner_friendly": true,
+    "description": "Supports undergraduate life science students transitioning into computational genomics and clinical analytics.",
+    "apply_url": "https://bioconacademy.com/fellowships",
+    "why_this": "Explicitly values non-CS life science background as an asset for computational biology."
+  },
+  {
+    "id": "opp-17",
+    "title": "Frontend Engineer - Design Systems",
+    "organization": "Freshworks Ecosystem",
+    "type": "Job",
+    "stipend_or_perk": "\u20b97.0 - 10.0 LPA",
+    "location": "Chennai / Bengaluru",
+    "required_skills": {
+      "React": 3,
+      "Responsive Design & Tailwind": 3,
+      "JavaScript": 3
+    },
+    "beginner_friendly": false,
+    "description": "Build accessible UI components, theme tokens, and developer documentation for enterprise customer portals.",
+    "apply_url": "https://freshworks.com/careers",
+    "why_this": "Targets engineers with proven mastery in responsive layout components and modern React."
+  },
+  {
+    "id": "opp-18",
+    "title": "Machine Learning Intern (Predictive Modeling)",
+    "organization": "Mu Sigma Analytics",
+    "type": "Internship",
+    "stipend_or_perk": "\u20b922,000 / month",
+    "location": "Bengaluru",
+    "required_skills": {
+      "Python": 3,
+      "Machine Learning": 2,
+      "Statistics": 2
+    },
+    "beginner_friendly": false,
+    "description": "Assist senior decision scientists in building customer churn and demand forecasting pipelines.",
+    "apply_url": "https://mu-sigma.com/careers",
+    "why_this": "Requires foundational statistics alongside Scikit-Learn modeling skills."
+  },
+  {
+    "id": "opp-19",
+    "title": "CS50x Free Harvard Verified Certificate Track",
+    "organization": "Harvard University / edX",
+    "type": "Free Certification",
+    "stipend_or_perk": "Official CS50 Certificate of Completion",
+    "location": "Online / Self-paced",
+    "required_skills": {
+      "Python": 2,
+      "SQL": 1
+    },
+    "beginner_friendly": true,
+    "description": "Legendary introductory computer science course completely free of charge, with 9 graded problem sets.",
+    "apply_url": "https://cs50.harvard.edu/x",
+    "why_this": "World-class foundational credential that tests problem-solving rigor."
+  },
+  {
+    "id": "opp-20",
+    "title": "React Native Mobile App Junior Developer",
+    "organization": "HealthTap Digital Care",
+    "type": "Job",
+    "stipend_or_perk": "\u20b95.5 - 8.0 LPA",
+    "location": "Remote (India)",
+    "required_skills": {
+      "React": 3,
+      "JavaScript": 3,
+      "Git & GitHub": 2
+    },
+    "beginner_friendly": false,
+    "description": "Collaborate on patient telehealth booking and doctor appointment reminders for iOS and Android.",
+    "apply_url": "https://healthtap.example/careers",
+    "why_this": "Natural progression for React web developers looking to build cross-platform apps."
+  },
+  {
+    "id": "opp-21",
+    "title": "First Hackathon: SheHacks / Diversity Buildathon",
+    "organization": "Women Techmakers & AnitaB.org",
+    "type": "Hackathon",
+    "stipend_or_perk": "\u20b975,000 Cash + Cloud Credits",
+    "location": "Virtual / Pan-India",
+    "required_skills": {
+      "HTML/CSS": 1
+    },
+    "beginner_friendly": true,
+    "description": "Encouraging weekend hackathon featuring warm mentors, beginner workshops, and zero judgment.",
+    "apply_url": "https://shehacks.example.org",
+    "why_this": "Super supportive space designed to demystify hackathons for first-time builders."
+  },
+  {
+    "id": "opp-22",
+    "title": "Junior MLOps & Fast-API Service Intern",
+    "organization": "DataPipe Cloud Systems",
+    "type": "Internship",
+    "stipend_or_perk": "\u20b928,000 / month",
+    "location": "Remote",
+    "required_skills": {
+      "Python": 3,
+      "MLOps & API Deployment": 2
+    },
+    "beginner_friendly": false,
+    "description": "Package PyTorch and ONNX models into high-throughput containerized microservices.",
+    "apply_url": "https://datapipe.cloud/jobs",
+    "why_this": "Focuses on deployment engineering rather than theoretical algorithm tuning."
+  },
+  {
+    "id": "opp-23",
+    "title": "Bioinformatics Pipeline Contributor: Nextflow Core",
+    "organization": "nf-core Genomics Collective",
+    "type": "Open Source",
+    "stipend_or_perk": "Community Co-authorship in Research Paper",
+    "location": "Remote",
+    "required_skills": {
+      "Next-Gen Sequencing Basics": 2,
+      "Git & GitHub": 2
+    },
+    "beginner_friendly": false,
+    "description": "Help validate reproducible NGS workflow modules for RNA-seq and microbial metagenomics.",
+    "apply_url": "https://nf-co.re/",
+    "why_this": "Direct pathway into international scientific software authoring."
+  },
+  {
+    "id": "opp-24",
+    "title": "Junior Next.js / Web Application Developer",
+    "organization": "Unicorn Labs Studio",
+    "type": "Job",
+    "stipend_or_perk": "\u20b96.0 - 8.5 LPA",
+    "location": "Bengaluru / Pune",
+    "required_skills": {
+      "React": 3,
+      "Next.js": 2,
+      "JavaScript": 3
+    },
+    "beginner_friendly": false,
+    "description": "Build modern server-side rendered client portals with Tailwind, Prisma, and Next.js App Router.",
+    "apply_url": "https://unicornlabs.io/join",
+    "why_this": "Requires verified hands-on Next.js project proof before interview shortlisting."
+  },
+  {
+    "id": "opp-25",
+    "title": "Deep Learning Specialization Fellowship Grant",
+    "organization": "DeepLearning.AI Equity Initiative",
+    "type": "Scholarship",
+    "stipend_or_perk": "100% Free Access to Andrew Ng Series",
+    "location": "Online",
+    "required_skills": {
+      "Python": 3,
+      "Linear Algebra & Calculus": 2
+    },
+    "beginner_friendly": true,
+    "description": "Full financial scholarship covering the 5-course Deep Learning Specialization on Coursera.",
+    "apply_url": "https://deeplearning.ai/scholarships",
+    "why_this": "Comprehensive math & neural network curriculum from the pioneer of online AI education."
+  }
+]
