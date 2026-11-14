@@ -744,10 +744,31 @@
       { role: "assistant", text: "Vanakkam Arun! 🧗‍♂️ I am your Sherpa. We climb this mountain one camp at a time — zero pressure, pure verified mastery. Bayapadama start pannunga! How are you feeling today?" }
     ];
 
+    // API HELPER: Seamlessly connect to backend if hosted on server
+    const IS_API_AVAILABLE = window.location.protocol.startsWith('http');
+
+    async function apiFetch(endpoint, options = {}) {
+      if (!IS_API_AVAILABLE) return null;
+      try {
+        const res = await fetch(endpoint, options);
+        if (res.ok) return await res.json();
+      } catch (e) {
+        console.warn("Backend API not reachable, using client state.", e);
+      }
+      return null;
+    }
+
     // INITIALIZATION
-    window.onload = function() {
+    window.onload = async function() {
       lucide.createIcons();
       initCharts();
+      
+      // Ping backend API health
+      const health = await apiFetch('/api/health');
+      if (health) {
+        addAgentLog("OrchestratorAgent", "BackendAPI", `Connected to FastAPI server (${health.llm_mode}).`);
+      }
+
       renderAll();
     };
 
@@ -1207,7 +1228,7 @@
       container.scrollTop = container.scrollHeight;
     }
 
-    function sendChatMessage() {
+    async function sendChatMessage() {
       const input = document.getElementById('chat-input');
       const val = input.value.trim();
       if (!val) return;
@@ -1216,17 +1237,33 @@
       input.value = "";
       renderChat();
 
-      setTimeout(() => {
-        let reply = "I hear you! In the mountain climb of software engineering, consistent small proofs beat cramming. Focus on one commit today, and your confidence will compound.";
-        if (val.toLowerCase().includes("stuck") || val.toLowerCase().includes("error")) {
-          reply = "Calm-ah irunga, idhu romba normal! 🧗‍♂️ Over 85% of programmers get stuck on the exact same error boundaries. Mistakes are proof you are learning.";
-        } else if (val.toLowerCase().includes("state board") || val.toLowerCase().includes("hire")) {
-          reply = "Recruiters care about what you can DO, not where you went to school. When you show 2 verified GitHub repositories and defend your code in a viva, you beat 95% of applicants.";
-        }
-        chatHistory.push({ role: "assistant", text: reply });
-        addAgentLog("MentorAgent", "Learner", `Responded to learner question in chat.`);
+      const isTanglish = document.getElementById('toggle-tanglish').checked;
+
+      // Try calling backend API
+      const apiRes = await apiFetch('/api/mentor/chat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message: val, tanglish: isTanglish, persona_id: currentUser === personas.meena ? 'meena' : (currentUser === personas.karthik ? 'karthik' : 'arun') })
+      });
+
+      if (apiRes && apiRes.reply) {
+        chatHistory.push({ role: "assistant", text: apiRes.reply });
+        addAgentLog("MentorAgent", "Learner", `API delivered ${isTanglish ? 'Tanglish' : 'English'} mentor reply.`);
         renderChat();
-      }, 500);
+      } else {
+        // Fallback local response
+        setTimeout(() => {
+          let reply = "I hear you! In the mountain climb of software engineering, consistent small proofs beat cramming. Focus on one commit today, and your confidence will compound.";
+          if (val.toLowerCase().includes("stuck") || val.toLowerCase().includes("error")) {
+            reply = "Calm-ah irunga, idhu romba normal! 🧗‍♂️ Over 85% of programmers get stuck on the exact same error boundaries. Mistakes are proof you are learning.";
+          } else if (val.toLowerCase().includes("state board") || val.toLowerCase().includes("hire")) {
+            reply = "Recruiters care about what you can DO, not where you went to school. When you show 2 verified GitHub repositories and defend your code in a viva, you beat 95% of applicants.";
+          }
+          chatHistory.push({ role: "assistant", text: reply });
+          addAgentLog("MentorAgent", "Learner", `Responded to learner question in chat.`);
+          renderChat();
+        }, 400);
+      }
     }
 
     function setPromptAndSend(p) {
@@ -1259,9 +1296,13 @@
     }
 
     // ASSESSMENT SUBMISSION
-    function submitAssessment(mode) {
+    async function submitAssessment(mode) {
       const resultCard = document.getElementById('assess-result-card');
       resultCard.classList.remove('hidden');
+
+      const skill = document.getElementById('assess-skill-select').value;
+      const repoUrl = document.getElementById('assess-repo-url').value;
+      const vivaAns = document.getElementById('assess-viva-answer').value || (mode === 'fail' ? 'I just copied a template.' : 'I structured clean modules with error handling.');
 
       if (mode === 'fail') {
         resultCard.innerHTML = `
@@ -1280,27 +1321,46 @@
             </div>
           </div>
         `;
-        addAgentLog("AssessorAgent", "MentorAgent", "Quiz completed: Score 40%. Triggered reassurance and adaptive revision.");
+        addAgentLog("AssessorAgent", "MentorAgent", `Quiz failed (${skill}): Score 40%. Triggered reassurance and adaptive revision.`);
       } else {
+        // Try calling live backend API if available
+        const subData = {
+          skill: skill,
+          target_level: 2,
+          mcq_score: 95,
+          viva_answer: vivaAns,
+          time_taken_seconds: 50,
+          project_url: repoUrl,
+          persona_id: currentUser === personas.meena ? 'meena' : (currentUser === personas.karthik ? 'karthik' : 'arun')
+        };
+        const apiRes = await apiFetch('/api/assess/submit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(subData)
+        });
+
+        const overall = apiRes?.grade?.overall_score || 92;
+        const vivaScore = apiRes?.grade?.viva_score || 90;
+
         resultCard.innerHTML = `
           <div class="border-l-4 border-emerald-500 pl-4">
             <div class="flex items-center gap-2 mb-2">
-              <span class="text-xs bg-emerald-950 text-emerald-400 border border-emerald-800 px-2.5 py-0.5 rounded-full font-bold">🟢 Score: 92% (PASSED & VERIFIED)</span>
-              <span class="text-xs text-slate-400">Anti-Copy Clean (Viva 90%)</span>
+              <span class="text-xs bg-emerald-950 text-emerald-400 border border-emerald-800 px-2.5 py-0.5 rounded-full font-bold">🟢 Score: ${overall}% (PASSED & VERIFIED)</span>
+              <span class="text-xs text-slate-400">Anti-Copy Clean (Viva ${vivaScore}%)</span>
             </div>
             <h4 class="font-bold text-slate-100 text-sm mb-1">🎉 Mastery Gate Cleared! Level 2 Verified</h4>
             <p class="text-xs text-slate-300 leading-relaxed mb-3">
-              Your code defense viva demonstrated authentic originality and proper error handling. 
-              Skill stamped onto your Proof Passport! 4 new internships unlocked.
+              Your code defense viva demonstrated authentic originality and defensive error handling. 
+              Skill stamped onto your Proof Passport! Newly qualified opportunities unlocked.
             </p>
             <div class="text-[11px] text-slate-400 font-mono">
               Agent Collaboration Chain: AssessorAgent ➔ PassportSeal ➔ OpportunityAgent (Unlocked Matches)
             </div>
           </div>
         `;
-        currentUser.verifiedSkills["JavaScript"] = { level: 2, score: 92, viva: 90, repo: "https://github.com/arun-dev/js-async-tracker", date: "2026-11-14" };
-        currentUser.readiness = 52;
-        addAgentLog("AssessorAgent", "OpportunityAgent", "JavaScript verified at Level 2! Unlocked 4 new junior opportunities.");
+        currentUser.verifiedSkills[skill] = { level: 2, score: overall, viva: vivaScore, repo: repoUrl, date: new Date().toISOString().split('T')[0] };
+        currentUser.readiness = Math.min(100, currentUser.readiness + 20);
+        addAgentLog("AssessorAgent", "OpportunityAgent", `${skill} verified at Level 2! Unlocked newly matched opportunities.`);
         renderAll();
       }
       resultCard.scrollIntoView({ behavior: 'smooth' });
@@ -1308,3 +1368,4 @@
   </script>
 </body>
 </html>
+
